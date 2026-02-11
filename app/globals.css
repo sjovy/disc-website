@@ -1,1 +1,32 @@
 @import "tailwindcss";
+
+/* Design System Foundations */
+@layer base {
+  :root {
+    /* DISC Accent Colors */
+    --color-disc-d: 220 38 38; /* red-600 */
+    --color-disc-i: 245 158 11; /* amber-500 */
+    --color-disc-s: 16 185 129; /* emerald-500 */
+    --color-disc-c: 59 130 246; /* blue-500 */
+
+    /* Semantic Colors */
+    --color-background: 255 255 255;
+    --color-foreground: 15 23 42; /* slate-900 */
+  }
+
+  body {
+    background-color: rgb(var(--color-background));
+    color: rgb(var(--color-foreground));
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

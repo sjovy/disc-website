@@ -1,14 +1,14 @@
-# Project CLAUDE.md - Sprint 1 Execution
+# Project CLAUDE.md - Sprint 2 Execution
 
-I, Claude (PM Orchestrator), execute Sprint 1 using autonomous workflow with structured delegation.
+I, Claude (PM Orchestrator), execute Sprint 2 using autonomous workflow with structured delegation.
 
 ---
 
 ## Current Sprint
 
-**Sprint 1: Foundation & Landing Page**
+**Sprint 2: Individual Assessment & AI Analysis Engine**
 
-**For full sprint details, read:** @docs/sprints/sprint-1/SPRINT_PLAN.md
+**For full sprint details, read:** @docs/sprints/sprint-2/SPRINT_PLAN.md
 
 That file contains:
 - Sprint overview (goal, scope, entry/exit criteria)
@@ -77,10 +77,163 @@ context for coordination, not execution.
 
 ---
 
+## Development Quick Reference
+
+### Commands
+
+```bash
+npm run dev      # Start development server (http://localhost:3000)
+npm run build    # Production build
+npm run start    # Start production server
+npm run lint     # ESLint check (must pass with zero errors)
+npm test         # Not yet configured (Sprint 2+)
+```
+
+### Project Structure
+
+```
+/app                    # Next.js App Router (Server Components default)
+  ├── layout.tsx        # Root layout (Inter font, Header, Footer)
+  ├── page.tsx          # Landing page with 3 entry cards
+  ├── /test             # Individual assessment (Sprint 2)
+  ├── /team             # Team analysis (Sprint 3)
+  ├── /demo             # Static demo (Sprint 4)
+  └── /privacy          # Privacy policy
+/components
+  ├── /layout           # Container, Header, Footer
+  └── /landing          # EntryCard component
+/lib                    # Utilities (cn helper for classnames)
+/disc-data              # Assessment data & RAG context (~1.1MB)
+/docs                   # PRD, Implementation Plan, Sprint Plans, Status
+/.claude                # PROTECTED - PM orchestration infrastructure
+```
+
+### Code Patterns
+
+**Page Setup (App Router):**
+```tsx
+import type { Metadata } from 'next'
+import { Container } from '@/components/layout/Container'
+
+export const metadata: Metadata = {
+  title: 'Page Title',
+  description: 'Page description',
+}
+
+export default function PageName() {
+  return (
+    <div className="bg-white">
+      <Container>
+        {/* page content */}
+      </Container>
+    </div>
+  )
+}
+```
+
+**Component Pattern:**
+```tsx
+import { cn } from '@/lib/utils'
+
+interface ComponentProps {
+  title: string
+  className?: string
+  children: React.ReactNode
+}
+
+export function Component({ title, className, children }: ComponentProps) {
+  return (
+    <div className={cn('base-classes', className)}>
+      {children}
+    </div>
+  )
+}
+```
+
+**DISC Color Usage:**
+```tsx
+// Tailwind classes for DISC colors
+text-disc-d  bg-disc-d  border-disc-d  // Red (Dominance)
+text-disc-i  bg-disc-i  border-disc-i  // Yellow (Influence)
+text-disc-s  bg-disc-s  border-disc-s  // Green (Steadiness)
+text-disc-c  bg-disc-c  border-disc-c  // Blue (Compliance)
+
+// Color map pattern for dynamic selection
+const borderColorMap = {
+  'disc-d': 'border-disc-d',
+  'disc-i': 'border-disc-i',
+  'disc-s': 'border-disc-s',
+  'disc-c': 'border-disc-c',
+}
+```
+
+**Navigation:**
+```tsx
+import Link from 'next/link'
+
+<Link href="/test">
+  <div className="group ...">
+    {/* Card content with group-hover effects */}
+  </div>
+</Link>
+```
+
+**Classname Utility:**
+```tsx
+import { cn } from '@/lib/utils'
+
+// Merge classes with conflict resolution
+className={cn(
+  'base-class',
+  condition && 'conditional-class',
+  props.className
+)}
+```
+
+### Design System
+
+**Core Principles:**
+- Base palette: Tailwind grays for UI foundation
+- DISC accents: Red (#DC2626), Yellow (#F59E0B), Green (#10B981), Blue (#3B82F6)
+- Typography: Inter font via next/font/google, generous line heights (1.5 for body)
+- Spacing: Generous whitespace (p-8, p-12, p-16 common)
+- Shadows: Subtle (shadow-sm for cards, shadow-lg on hover)
+- Interactive: smooth transitions (duration-200), focus rings for accessibility
+
+**Component Patterns:**
+- Server Components by default (no 'use client' unless needed for state/effects)
+- Container component wraps all page content (max-w-7xl, responsive padding)
+- Import alias `@/*` maps to project root for clean imports
+- cn() utility (clsx + tailwind-merge) for conditional classnames
+- Props typed with TypeScript interfaces
+
+**Tailwind Config Highlights:**
+- DISC Colors (hex): Dominance (#DC2626), Influence (#F59E0B), Steadiness (#10B981), Compliance (#3B82F6)
+- Custom Spacing: 0, 1, 2, 3, 4, 6, 8, 12, 16, 24, 32, 48, 64 (rem-based)
+- Border Radius: sm (4px), default (8px), md (12px), lg (16px), full (9999px)
+- Shadows: sm, md, lg (subtle, professional)
+
+### Technical Constraints
+
+- **Free & anonymous:** No authentication, no user accounts
+- **Client-side storage:** localStorage only (no backend database in v1)
+- **English only:** Single language (v1)
+- **Client-side API calls:** Claude API called from browser with .env.local keys
+  - Trade-off: API key exposed in bundle (acceptable for portfolio v1)
+  - Migration path: Document API route pattern for production
+
+**Data Flow (Sprint 2+):**
+- Client-side localStorage for persistence
+- Claude API called from client with .env.local keys (v1 approach)
+- RAG: load `/disc-data` JSON files into Claude API context at runtime
+- 24-question assessment → DISC scoring → 15 pattern matching → AI analysis
+
+---
+
 ## PM Orchestrator Workflow
 
 **STEP 1: READ & UNDERSTAND**
-1. Read @docs/sprints/sprint-1/SPRINT_PLAN.md thoroughly
+1. Read @docs/sprints/sprint-2/SPRINT_PLAN.md thoroughly
 2. Understand:
    - Sprint goal and scope
    - Each feature's complexity and domain hints
@@ -94,7 +247,7 @@ context for coordination, not execution.
 For each feature in SPRINT_PLAN.md:
 
 1. Review task breakdown suggestions in sprint plan
-2. Create task file: `/docs/sprints/sprint-1/tasks/task-[NN]-[name].md`
+2. Create task file: `/docs/sprints/sprint-2/tasks/task-[NN]-[name].md`
 3. Use task file template (below)
 4. Populate with:
    - Context from sprint plan
@@ -109,7 +262,7 @@ For each feature in SPRINT_PLAN.md:
 
 For each task file:
 
-1. Invoke agent: `Task(subagent_type="[type]", model="[model]", prompt="Execute task file: /docs/sprints/sprint-1/tasks/task-[NN]-[name].md")`
+1. Invoke agent: `Task(subagent_type="[type]", model="[model]", prompt="Execute task file: /docs/sprints/sprint-2/tasks/task-[NN]-[name].md")`
 2. Monitor completion
 3. Coordinate dependencies (follow delegation strategy from sprint plan)
 4. Track token usage
@@ -123,7 +276,7 @@ For each task file:
 
 **STEP 5: COMPLETION**
 
-1. Update @docs/IMPLEMENTATION_PLAN.md checkboxes for Sprint 1
+1. Update @docs/IMPLEMENTATION_PLAN.md checkboxes for Sprint 2
 2. Update @docs/PROJECT_STATUS.md with completion details
 3. Fill in "Token Budget Tracking - Actuals" in SPRINT_PLAN.md
 4. Add learnings to SPRINT_PLAN.md
@@ -134,7 +287,7 @@ For each task file:
 
 ## Task File Template
 
-When creating task files in `/docs/sprints/sprint-1/tasks/`:
+When creating task files in `/docs/sprints/sprint-2/tasks/`:
 
 **Reference:** Use the `xtask` skill for complete template structure.
 
@@ -179,16 +332,17 @@ Load these via @ when needed:
 - @docs/IMPLEMENTATION_PLAN.md
 - @docs/PRD.md
 - @docs/PROJECT_STATUS.md
-- @docs/sprints/sprint-1/SPRINT_PLAN.md
 
 **Most important:**
-- @docs/sprints/sprint-1/SPRINT_PLAN.md (your playbook for this sprint)
+- @docs/sprints/sprint-2/SPRINT_PLAN.md (your playbook for this sprint)
 
 ---
 
 ## Critical Requirements
 
-Requirements will be defined in @docs/PRD.md - reference as needed.
+Requirements defined in @docs/PRD.md - reference as needed.
+
+Sprint 2 implements 18 requirements (REQ-IND-010 through REQ-IND-150, plus infrastructure and quality requirements).
 
 These are NON-NEGOTIABLE. Every implementation must satisfy these.
 
@@ -198,13 +352,11 @@ These are NON-NEGOTIABLE. Every implementation must satisfy these.
 
 Run these during quality verification:
 
-(No build commands detected yet - will be created during Sprint 1)
-
-After Sprint 1 setup, commands will include:
-- `npm run dev` - Development server
-- `npm run build` - Production build
-- `npm run lint` - ESLint validation
-- `npm test` - Unit tests (if configured)
+- dev: `npm run dev` - Start development server (http://localhost:3000)
+- build: `npm run build` - Production build
+- lint: `npm run lint` - ESLint check (must pass with zero errors)
+- test: `npm test` - Not yet configured (Sprint 2+)
+- start: `npm start` - Start production server
 
 ---
 
@@ -212,16 +364,16 @@ After Sprint 1 setup, commands will include:
 
 - `.claude/` directory is PROTECTED - never modify without explicit user request
 - Project README created only AFTER project is functional, not during development
-- Sprint task files in `/docs/sprints/sprint-1/tasks/` persist as execution history
+- Sprint task files in `/docs/sprints/sprint-2/tasks/` persist as execution history
 - Tactical SPRINT_PLAN.md can be enhanced with notes during execution
 - Token actuals should be recorded in SPRINT_PLAN.md after sprint completion
 
 ---
 
-## Sprint 1 Ready for Execution
+## Sprint 2 Ready for Execution
 
 This CLAUDE.md provides the operating manual for PM Orchestrator.
 
-**Next step:** Read @docs/sprints/sprint-1/SPRINT_PLAN.md to begin sprint execution.
+**Next step:** Read @docs/sprints/sprint-2/SPRINT_PLAN.md to begin sprint execution.
 
 ---

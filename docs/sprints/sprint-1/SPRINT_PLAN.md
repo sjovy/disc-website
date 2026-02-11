@@ -1,7 +1,7 @@
 # Sprint 1: Foundation & Landing Page
 
 **Created:** 2026-02-10
-**Status:** Ready for Execution
+**Status:** COMPLETE
 
 ---
 
@@ -222,12 +222,26 @@ From IMPLEMENTATION_PLAN.md (for reference):
 - Quality verification: ~5k tokens
 - **Total: ~115k tokens**
 
-**Actuals:** (Fill in during/after sprint)
-- Actual PM tokens: [TBD]
-- Actual sub-agent tokens: [TBD]
-- Variance: [TBD]
+**Actuals:** (Completed 2026-02-11)
+- Actual PM tokens: ~72k tokens (coordination, task file creation, delegation)
+- Actual sub-agent tokens: ~132k tokens
+  - Task 1.1 (Next.js init): 34.6k tokens (haiku)
+  - Task 1.2 (Tooling/routes): 32.5k tokens (haiku)
+  - Task 2.1 (Design system): 33.8k tokens (sonnet)
+  - Task 2.2 (Landing page): 31.1k tokens (sonnet)
+  - Quality verification: 17.5k tokens (haiku)
+- **Total sprint: ~204k tokens**
+- **Variance: +89k tokens over estimate (+77% variance)**
 
 **Learnings for next sprint:**
-- [To be filled after sprint completion]
+- Token estimates were significantly low: 115k estimated vs 204k actual (+77%)
+- Haiku tasks exceeded estimates but remained reasonable (20k est → 30-35k actual for each)
+- Sonnet tasks matched estimates well (30k est → 31-34k actual for each)
+- PM coordination consumed more context than expected (~72k tokens for task file creation, agent monitoring, and delegation)
+- Parallel delegation worked effectively (Round 2 efficiency gain when Task 1.2 and 2.1 ran simultaneously)
+- Quality verification essential and should be budgeted (~20k tokens, estimated only 5k)
+- **Recommendation:** Increase token budgets by 50-75% for future sprint estimates based on Sprint 1 actuals
+- **Recommendation:** Delegate task file creation to doc-writer agent to preserve PM context for coordination
+- **Recommendation:** Budget ~60-70k for PM coordination in future sprints (was underestimated at 10k)
 
 ---
