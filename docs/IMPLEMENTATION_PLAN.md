@@ -188,9 +188,9 @@ This document outlines the strategic implementation plan for the DISC assessment
 **Entry Criteria:**
 - Sprint 1 complete and merged
 - Claude API key obtained and documented
-- /disc-data/disc_complete.json readable
+- /disc-data/disc_assessment.json readable
 - /disc-data markdown theory files (~1.1MB) accessible
-- /disc-data/disc_example_analyses_enhanced.json readable
+- /disc-data/disc_ai_analysis_framework.json readable
 
 **Exit Criteria:**
 - 24-question assessment completable on single scrollable page
@@ -453,11 +453,11 @@ This document outlines the strategic implementation plan for the DISC assessment
 ## Data Flow Architecture
 
 ### Individual Assessment Flow
-1. User starts test -> load disc_complete.json
+1. User starts test -> load disc_assessment.json
 2. User answers 24 questions -> auto-save to localStorage
 3. User submits -> calculate D-I-S-C scores
 4. Map to closest of 15 profile patterns
-5. Load RAG context (theory markdown + example analyses)
+5. Load RAG context (disc_ai_analysis_framework.json + theory markdown)
 6. Call Claude API with RAG + exact scores -> stream response
 7. Render results page: analysis + charts
 8. Save completed results to localStorage

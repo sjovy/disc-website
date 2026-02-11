@@ -95,7 +95,7 @@
 **REQ-IND-010: Assessment Instrument Data**
 - Description: Load and parse DISC assessment questions
 - Acceptance Criteria:
-  - Read /disc-data/disc_complete.json successfully
+  - Read /disc-data/disc_assessment.json successfully
   - Parse 24 forced-choice questions
   - Each question has 4 options (D, I, S, C traits)
   - Validate data structure on load
@@ -150,7 +150,7 @@
 - Description: Load DISC theory and example analyses for RAG context
 - Acceptance Criteria:
   - Load /disc-data markdown files (~1.1MB theory)
-  - Load /disc-data/disc_example_analyses_enhanced.json
+  - Load /disc-data/disc_ai_analysis_framework.json
   - Include in Claude API context window
   - Handle loading errors gracefully
 - Complexity: COMPLEX
@@ -632,10 +632,20 @@ The following features are explicitly excluded from v1:
 
 ## Data Sources
 
-- Assessment questions: /disc-data/disc_complete.json
-- Example analyses: /disc-data/disc_example_analyses_enhanced.json
-- DISC theory: 2 markdown files (~1.1MB total) in /disc-data/
-- Profile patterns: 15 reference patterns embedded in data files
+**Core Assessment:**
+- Assessment questions: /disc-data/disc_assessment.json
+- RAG framework: /disc-data/disc_ai_analysis_framework.json
+
+**Pattern & Profile Data:**
+- Pattern profiles: /disc-data/disc_profiles.json (15 behavioral patterns)
+- Team dynamics: /disc-data/disc_team_dynamics.json
+- Career guidance: /disc-data/disc_career_guidance.json
+- Compatibility: /disc-data/disc_compatibility.json
+- Communication: /disc-data/disc_communication.json
+
+**Reference Documentation:**
+- DISC theory: /disc-data/DISC_REFERENCE.md (comprehensive reference)
+- Implementation guide: /disc-data/README.md (~1.1MB total)
 
 ---
 

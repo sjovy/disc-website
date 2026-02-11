@@ -1,0 +1,368 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "source": "Classical DISC Team Dynamics Research",
+    "description": "Pattern interaction ratings, team compositions, and collaboration frameworks"
+  },
+  "interaction_model": {
+    "axes": {
+      "pace": {
+        "description": "Separates fast-acting (D, I) from cautious, reflective (S, C)",
+        "fast": [
+          "D",
+          "I"
+        ],
+        "measured": [
+          "S",
+          "C"
+        ]
+      },
+      "priority": {
+        "description": "Separates task-oriented (D, C) from people-oriented (I, S)",
+        "task_focused": [
+          "D",
+          "C"
+        ],
+        "people_focused": [
+          "I",
+          "S"
+        ]
+      }
+    },
+    "tension_types": {
+      "diagonal_maximum": {
+        "description": "Maximum tension - opposite on both axes",
+        "pairings": [
+          "D-S",
+          "I-C"
+        ],
+        "rating_range": "2.0-3.0",
+        "characteristics": "High complementarity but highest friction. Requires most conscious adaptation."
+      },
+      "adjacent_moderate": {
+        "description": "Moderate tension - share one axis",
+        "pairings": [
+          "D-I",
+          "I-S",
+          "S-C",
+          "C-D"
+        ],
+        "rating_range": "3.0-4.0",
+        "characteristics": "Smoothest daily dynamics with moderate complementarity."
+      },
+      "same_quadrant": {
+        "description": "Low tension - same quadrant but amplify shared weaknesses",
+        "rating_range": "2.5-3.5",
+        "characteristics": "Immediate understanding but risks blind spots."
+      }
+    },
+    "compatibility_principle": "Shared secondary styles (especially I or S) are the strongest predictor of successful collaboration."
+  },
+  "pattern_interactions": {
+    "Developer_Specialist": {
+      "rating": 2.0,
+      "type": "diagonal_maximum",
+      "summary": "Maximum tension. Developer's rapid decisions steamroll Specialist's need for stability.",
+      "strengths": "Developer drives strategy; Specialist ensures reliable execution.",
+      "challenges": "Developer sees Specialist as passive; Specialist internalizes resentment.",
+      "success_keys": [
+        "Developer must slow down and explain 'why' behind changes",
+        "Specialist must speak up proactively before resentment builds"
+      ]
+    },
+    "Promoter_ObjectiveThinker": {
+      "rating": 2.0,
+      "type": "diagonal_maximum",
+      "summary": "Diagonal clash. Promoter's enthusiasm collides with Objective Thinker's demand for data.",
+      "strengths": "Promoter sells vision; Objective Thinker builds specifications.",
+      "challenges": "Promoter's spontaneity vs C's need for detail.",
+      "success_keys": [
+        "Promoter provides written details",
+        "Objective Thinker allows brainstorming without premature criticism"
+      ]
+    },
+    "ResultsOriented_Investigator": {
+      "rating": 3.5,
+      "type": "adjacent_moderate",
+      "summary": "Surprisingly strong. Investigator's secondary D creates shared respect for results.",
+      "strengths": "Investigator's patience and follow-through balances Results-Oriented; C-component adds rigor.",
+      "challenges": "Pace differences require management.",
+      "success_keys": [
+        "Leverage shared D for common ground",
+        "Results-Oriented respects Investigator's analytical depth"
+      ]
+    },
+    "Persuader_Perfectionist": {
+      "rating": 2.5,
+      "type": "diagonal_softened",
+      "summary": "Challenging but productive. Exceptional sales-to-delivery pairing.",
+      "strengths": "Persuader sells; Perfectionist delivers quality.",
+      "challenges": "Persuader wants quick action; Perfectionist needs thorough analysis.",
+      "success_keys": [
+        "Persuader allows review time",
+        "Perfectionist provides clear timelines rather than open-ended delays"
+      ]
+    },
+    "Inspirational_Practitioner": {
+      "rating": 3.0,
+      "type": "adjacent_moderate",
+      "summary": "Both share I-components, providing social comfort.",
+      "strengths": "Inspirational provides vision; Practitioner ensures quality implementation with human touch.",
+      "challenges": "Managing pace differences.",
+      "success_keys": [
+        "Leverage shared I for communication",
+        "Practitioner's warmth makes them receptive to Inspirational's boldness"
+      ]
+    },
+    "Creative_Agent": {
+      "rating": 3.0,
+      "type": "diagonal_softened",
+      "summary": "Diagonal opposites softened by secondary styles.",
+      "strengths": "Creative generates well-researched ideas; Agent provides friendly implementation and stakeholder management.",
+      "challenges": "Creative's intensity may overwhelm Agent's preference for harmony.",
+      "success_keys": [
+        "Creative tempers intensity",
+        "Agent provides crucial people-side support"
+      ]
+    }
+  },
+  "same_family_dynamics": {
+    "D_family": {
+      "internal_rating": 3.0,
+      "strength": "Fast alignment on action and goals",
+      "risk": "Power struggles; too many cooks; no one handles details",
+      "worst_pairing": "Developer + Developer (2.0) - parallel decision-making, competing agendas"
+    },
+    "I_family": {
+      "internal_rating": 3.5,
+      "strength": "High energy, social synergy",
+      "risk": "Lack of follow-through; over-promising; insufficient detail work"
+    },
+    "S_family": {
+      "internal_rating": 4.0,
+      "strength": "Deep harmony and reliability",
+      "risk": "Resistance to change; slow decisions; conflict avoidance",
+      "best_pairing": "Specialist + Agent (4.5) - deeply harmonious but risks passivity"
+    },
+    "C_family": {
+      "internal_rating": 3.5,
+      "strength": "Exceptional quality output",
+      "risk": "Analysis paralysis; nothing ships; social disconnection"
+    }
+  },
+  "optimal_team_compositions": {
+    "startup_innovation": {
+      "team_size": 5,
+      "mission": "Innovation, rapid growth, market disruption",
+      "roles": [
+        {
+          "role": "CEO/Founder",
+          "pattern": "Inspirational",
+          "rationale": "Bold vision + persuasive charm"
+        },
+        {
+          "role": "CTO/Product Lead",
+          "pattern": "Creative",
+          "rationale": "Innovation with rigor"
+        },
+        {
+          "role": "Growth/Sales Lead",
+          "pattern": "Persuader",
+          "rationale": "Socially magnetic, drives deals"
+        },
+        {
+          "role": "Operations/Culture",
+          "pattern": "Agent",
+          "rationale": "Team cohesion, relationship maintenance"
+        },
+        {
+          "role": "Finance/Quality",
+          "pattern": "Perfectionist",
+          "rationale": "Financial discipline, risk prevention"
+        }
+      ]
+    },
+    "execution_operations": {
+      "team_size": 5,
+      "mission": "Reliable execution, process excellence, scalable operations",
+      "roles": [
+        {
+          "role": "Operations Director",
+          "pattern": "Achiever",
+          "rationale": "Reliable with drive to push performance"
+        },
+        {
+          "role": "Process Manager",
+          "pattern": "Perfectionist",
+          "rationale": "Ensures processes and quality"
+        },
+        {
+          "role": "Team Lead",
+          "pattern": "Specialist",
+          "rationale": "Consistency, loyalty, stability"
+        },
+        {
+          "role": "Quality Analyst",
+          "pattern": "Objective Thinker",
+          "rationale": "Data-driven error detection"
+        },
+        {
+          "role": "Project Coordinator",
+          "pattern": "Results-Oriented",
+          "rationale": "Drives deadlines, prevents stagnation"
+        }
+      ]
+    },
+    "customer_service": {
+      "team_size": 5,
+      "mission": "Customer satisfaction, relationship building, problem resolution",
+      "roles": [
+        {
+          "role": "Service Manager",
+          "pattern": "Counselor",
+          "rationale": "Empathetic trust-builder"
+        },
+        {
+          "role": "Senior Rep",
+          "pattern": "Agent",
+          "rationale": "Patient with difficult customers"
+        },
+        {
+          "role": "Senior Rep",
+          "pattern": "Specialist",
+          "rationale": "Calm, methodical problem-solving"
+        },
+        {
+          "role": "Escalation Specialist",
+          "pattern": "Investigator",
+          "rationale": "Handles tough cases with backbone"
+        },
+        {
+          "role": "Training/QA",
+          "pattern": "Perfectionist",
+          "rationale": "Consistent service documentation"
+        }
+      ]
+    },
+    "creative_marketing": {
+      "team_size": 5,
+      "mission": "Brand building, creative campaigns, audience engagement",
+      "roles": [
+        {
+          "role": "Creative Director",
+          "pattern": "Inspirational",
+          "rationale": "Bold campaigns, team energy"
+        },
+        {
+          "role": "Copywriter/Strategist",
+          "pattern": "Appraiser",
+          "rationale": "Creative flair with critical eye"
+        },
+        {
+          "role": "Social/Community",
+          "pattern": "Promoter",
+          "rationale": "Audience engagement, trend-sensing"
+        },
+        {
+          "role": "Designer/Producer",
+          "pattern": "Practitioner",
+          "rationale": "Quality execution with warmth"
+        },
+        {
+          "role": "Project Manager",
+          "pattern": "Achiever",
+          "rationale": "Keeps campaigns on schedule"
+        }
+      ]
+    },
+    "technical_engineering": {
+      "team_size": 5,
+      "mission": "Product development, technical excellence, system architecture",
+      "roles": [
+        {
+          "role": "Tech Lead",
+          "pattern": "Creative",
+          "rationale": "Innovative architect, demands excellence"
+        },
+        {
+          "role": "Senior Engineer",
+          "pattern": "Objective Thinker",
+          "rationale": "Deep analytical capability"
+        },
+        {
+          "role": "Senior Engineer",
+          "pattern": "Perfectionist",
+          "rationale": "Methodical, quality-obsessed"
+        },
+        {
+          "role": "DevOps/Systems",
+          "pattern": "Investigator",
+          "rationale": "Patient troubleshooter with rigor"
+        },
+        {
+          "role": "Scrum Master",
+          "pattern": "Persuader",
+          "rationale": "Stakeholder connection, removes blockers"
+        }
+      ]
+    }
+  },
+  "leadership_pairings": {
+    "high_friction_reporting": {
+      "description": "Reporting relationships requiring active mitigation",
+      "pairings": [
+        {
+          "manager": "Developer",
+          "report": "Specialist",
+          "friction_rating": "high",
+          "mitigation": "Developer must slow communication; Specialist must voice concerns early"
+        },
+        {
+          "manager": "Promoter",
+          "report": "Objective Thinker",
+          "friction_rating": "high",
+          "mitigation": "Promoter provides written details; Objective Thinker accepts verbal brainstorming"
+        },
+        {
+          "manager": "Results-Oriented",
+          "report": "Perfectionist",
+          "friction_rating": "medium-high",
+          "mitigation": "Results-Oriented allows time for quality; Perfectionist commits to deadlines"
+        }
+      ]
+    },
+    "smooth_reporting": {
+      "description": "Natural reporting relationships with lower friction",
+      "pairings": [
+        {
+          "manager": "Inspirational",
+          "report": "Agent",
+          "friction_rating": "low",
+          "reason": "Shared I creates natural bridge; leader-supporter dynamic"
+        },
+        {
+          "manager": "Achiever",
+          "report": "Specialist",
+          "friction_rating": "low",
+          "reason": "Both S-primary; shared values of reliability and consistency"
+        },
+        {
+          "manager": "Perfectionist",
+          "report": "Investigator",
+          "friction_rating": "low",
+          "reason": "Both value quality and analytical rigor"
+        }
+      ]
+    }
+  },
+  "team_balance_principles": {
+    "quadrant_representation": "Most effective teams include representation from all four quadrants (D/I/S/C)",
+    "homogeneous_risks": {
+      "all_D": "Teams fight for control, no detail work gets done",
+      "all_I": "Teams over-promise and under-deliver, lack follow-through",
+      "all_S": "Teams stall on decisions, resist necessary change",
+      "all_C": "Teams suffer analysis paralysis, perfectionism prevents shipping"
+    },
+    "productive_tension": "Best teams engineer productive tension rather than avoiding it. Diagonal pairs (D-S, I-C) offer highest growth potential with managed friction."
+  }
+}

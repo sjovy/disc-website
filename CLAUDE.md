@@ -10,6 +10,8 @@ DISC personality assessment website - portfolio showcase combining web developme
 
 ## Development Commands
 
+**Note:** These commands will be available after Sprint 1 completes (project initialization).
+
 ```bash
 npm run dev      # Start development server
 npm run build    # Production build
@@ -63,9 +65,20 @@ npm test         # Run test suite
 
 ## Data Sources
 
-- `disc-data/disc_complete.json` - 24-question assessment instrument
-- `disc-data/disc_example_analyses_enhanced.json` - RAG example analyses
-- `disc-data/*.md` - DISC theory documentation for AI context
+**Core Assessment:**
+- `disc-data/disc_assessment.json` - 24-question forced-choice assessment instrument
+- `disc-data/disc_ai_analysis_framework.json` - RAG framework & example analyses
+
+**Pattern & Profile Data:**
+- `disc-data/disc_profiles.json` - Comprehensive profiles for all 15 patterns
+- `disc-data/disc_team_dynamics.json` - Team interaction & composition framework
+- `disc-data/disc_career_guidance.json` - Career alignment & business function fit
+- `disc-data/disc_compatibility.json` - Relationship & interpersonal dynamics
+- `disc-data/disc_communication.json` - Communication strategies & playbooks
+
+**Reference Documentation:**
+- `disc-data/DISC_REFERENCE.md` - Human-readable comprehensive reference
+- `disc-data/README.md` - Data package implementation guide (~1.1MB total)
 
 ## Important Constraints
 

@@ -1,0 +1,397 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "source": "Classical DISC Relationship Compatibility Research",
+    "description": "Compatibility ratings and relationship dynamics between patterns"
+  },
+  "compatibility_principles": {
+    "primary_predictor": "Shared secondary styles (especially I or S) predict compatibility better than primary styles",
+    "diagonal_pairs": {
+      "description": "Opposite on both axes (D-S, I-C)",
+      "characteristics": "Most complementary but require most adaptation. High growth potential with high friction floor.",
+      "rating_range": "3.0-4.0"
+    },
+    "adjacent_pairs": {
+      "description": "Share one axis (D-I, I-S, S-C, C-D)",
+      "characteristics": "Smoothest daily dynamics with moderate complementarity.",
+      "rating_range": "3.0-4.0"
+    },
+    "same_quadrant": {
+      "description": "Both from same family (D+D, I+I, S+S, C+C)",
+      "characteristics": "Immediate understanding but amplify shared weaknesses.",
+      "rating_range": "2.5-3.0"
+    },
+    "key_insight": "Blended patterns (D/I, S/I, C/S) are more universally compatible than pure styles because they have more natural flex"
+  },
+  "priority_pairings": {
+    "Developer_Specialist": {
+      "rating": 3.0,
+      "type": "diagonal_opposite",
+      "summary": "Classic opposite pairing. Developer makes decisions; Specialist follows through reliably.",
+      "strengths": [
+        "Specialist's loyalty satisfies Developer's need for reliable partner",
+        "Complementary strengths in decision-making and execution"
+      ],
+      "critical_risk": "Developer becomes domineering while Specialist grows resentful silently until catastrophic breaking point",
+      "success_keys": [
+        "Developer must ask rather than demand",
+        "Specialist must speak up before resentment builds"
+      ]
+    },
+    "Developer_Counselor": {
+      "rating": 2.5,
+      "type": "diagonal_maximum",
+      "summary": "Maximum diagonal contrast. Developer forceful and fears loss of control; Counselor warm and fears causing stress.",
+      "strengths": [
+        "Counselor's warmth softens Developer's edges",
+        "Developer's decisiveness gives Counselor security"
+      ],
+      "critical_risk": "Developer may devastate Counselor's sensitive spirit; Counselor becomes doormat",
+      "success_keys": [
+        "Developer must consciously soften tone",
+        "Counselor must practice direct communication"
+      ]
+    },
+    "Promoter_ObjectiveThinker": {
+      "rating": 3.0,
+      "type": "diagonal_opposite",
+      "summary": "Social butterfly meets deep thinker. Promoter brings levity; C brings structure.",
+      "strengths": [
+        "Promoter brings optimism C desperately needs",
+        "Objective Thinker grounds Promoter's spontaneity"
+      ],
+      "critical_risk": "Promoter exhausts C's social energy; C's reserve makes I feel rejected",
+      "success_keys": [
+        "Respect social energy differences",
+        "C must offer verbal appreciation",
+        "I must respect alone time"
+      ]
+    },
+    "Inspirational_Specialist": {
+      "rating": 3.5,
+      "type": "diagonal_softened",
+      "summary": "Inspirational's I-component provides warmth that pure D lacks.",
+      "strengths": [
+        "Inspirational persuades rather than bulldozes",
+        "Shared people-orientation (I/S) is significant asset",
+        "Specialist responds better to persuasion"
+      ],
+      "critical_risk": "Pace mismatch still present",
+      "success_keys": [
+        "Leverage I-component for connection",
+        "Inspirational shows patience"
+      ]
+    },
+    "Creative_Counselor": {
+      "rating": 2.0,
+      "type": "diagonal_maximum",
+      "summary": "True diagonal opposites on BOTH axes - maximum stretch pairing.",
+      "strengths": [
+        "Maximum complementarity if successfully bridged",
+        "Creative's innovation + Counselor's empathy"
+      ],
+      "critical_risk": "Creative's cold, aloof quality can devastate sensitive Counselor. Requires most conscious adaptation of any pairing.",
+      "success_keys": [
+        "Creative must develop emotional awareness",
+        "Counselor must develop assertiveness",
+        "Both need high commitment to growth"
+      ]
+    },
+    "ResultsOriented_Agent": {
+      "rating": 3.5,
+      "type": "shared_secondary",
+      "summary": "Shared I component is major bridge creating mutual warmth.",
+      "strengths": [
+        "Both enjoy interpersonal connection",
+        "Agent's tact balances Results-Oriented's directness",
+        "Natural rapport through shared I"
+      ],
+      "critical_risk": "Pace differential (fast D/I vs moderate S/I)",
+      "success_keys": [
+        "Leverage shared I for emotional connection",
+        "Results-Oriented respects Agent's people skills"
+      ]
+    },
+    "Persuader_Investigator": {
+      "rating": 3.0,
+      "type": "shared_secondary",
+      "summary": "Shared D component provides common ground around drive and results.",
+      "strengths": [
+        "Persuader's social skills complement Investigator's analytical depth",
+        "Both value accomplishment"
+      ],
+      "critical_risk": "Investigator's need for privacy may feel intrusive to socially energetic Persuader",
+      "success_keys": [
+        "Respect different social energy needs",
+        "Find balance between social time and alone time"
+      ]
+    }
+  },
+  "emotional_needs_by_pattern": {
+    "Developer": {
+      "primary_needs": [
+        "Respect for autonomy",
+        "Intellectual stimulation",
+        "Loyalty without clinginess"
+      ],
+      "what_they_give": [
+        "Direction",
+        "Protection",
+        "Decisiveness"
+      ]
+    },
+    "Results-Oriented": {
+      "primary_needs": [
+        "Admiration for achievements",
+        "A partner who keeps pace"
+      ],
+      "what_they_give": [
+        "Drive",
+        "Confidence",
+        "Energy"
+      ]
+    },
+    "Inspirational": {
+      "primary_needs": [
+        "Recognition of social status",
+        "A partner who sees their vision"
+      ],
+      "what_they_give": [
+        "Charisma",
+        "Motivation",
+        "Excitement"
+      ]
+    },
+    "Creative": {
+      "primary_needs": [
+        "Intellectual respect",
+        "Space to explore",
+        "Patience with their duality"
+      ],
+      "what_they_give": [
+        "Innovation",
+        "Strategic thinking"
+      ]
+    },
+    "Promoter": {
+      "primary_needs": [
+        "Constant affirmation",
+        "Social freedom",
+        "FUN",
+        "Approval"
+      ],
+      "what_they_give": [
+        "Optimism",
+        "Humor",
+        "Social connection"
+      ]
+    },
+    "Persuader": {
+      "primary_needs": [
+        "Status recognition",
+        "Variety",
+        "Admiration"
+      ],
+      "what_they_give": [
+        "Charisma",
+        "Confidence",
+        "Initiative"
+      ]
+    },
+    "Counselor": {
+      "primary_needs": [
+        "Emotional safety",
+        "Appreciation for care",
+        "Gentle honesty"
+      ],
+      "what_they_give": [
+        "Warmth",
+        "Empathy",
+        "Deep listening"
+      ]
+    },
+    "Appraiser": {
+      "primary_needs": [
+        "Recognition of accomplishments",
+        "Involvement"
+      ],
+      "what_they_give": [
+        "Team spirit",
+        "Creative goal achievement"
+      ]
+    },
+    "Specialist": {
+      "primary_needs": [
+        "Stability",
+        "Predictable routines",
+        "Being needed"
+      ],
+      "what_they_give": [
+        "Loyalty",
+        "Patience",
+        "Quiet strength"
+      ]
+    },
+    "Agent": {
+      "primary_needs": [
+        "Group acceptance",
+        "Harmony",
+        "Gentle encouragement"
+      ],
+      "what_they_give": [
+        "Empathy",
+        "Kindness",
+        "Mediation"
+      ]
+    },
+    "Achiever": {
+      "primary_needs": [
+        "Respect for accomplishments",
+        "Fairness"
+      ],
+      "what_they_give": [
+        "Determination",
+        "Accountability",
+        "Reliability"
+      ]
+    },
+    "Investigator": {
+      "primary_needs": [
+        "Respect for competence",
+        "Space",
+        "Factual communication"
+      ],
+      "what_they_give": [
+        "Tenacity",
+        "Analytical depth"
+      ]
+    },
+    "Objective Thinker": {
+      "primary_needs": [
+        "Acknowledgment",
+        "Quality time",
+        "Logical discussion"
+      ],
+      "what_they_give": [
+        "Accuracy",
+        "Strategic planning"
+      ]
+    },
+    "Perfectionist": {
+      "primary_needs": [
+        "Precision",
+        "Stable outcomes",
+        "High standards respected"
+      ],
+      "what_they_give": [
+        "Quality",
+        "Reliability",
+        "Careful planning"
+      ]
+    },
+    "Practitioner": {
+      "primary_needs": [
+        "Trust",
+        "Being valued for expertise"
+      ],
+      "what_they_give": [
+        "Specialized skill",
+        "Cooperation"
+      ]
+    }
+  },
+  "most_compatible": [
+    {
+      "rank": 1,
+      "pairing": "Inspirational + Agent",
+      "rating": 4.0,
+      "reason": "Shared I warmth bridges D/S divide; natural leader-supporter dynamic"
+    },
+    {
+      "rank": 2,
+      "pairing": "Results-Oriented + Agent",
+      "rating": 3.5,
+      "reason": "Shared I creates emotional bridge; complementary drive + stability"
+    },
+    {
+      "rank": 3,
+      "pairing": "Inspirational + Specialist",
+      "rating": 3.5,
+      "reason": "Persuasion (not domination) works with S; warmth manages pace differences"
+    },
+    {
+      "rank": 4,
+      "pairing": "Counselor + Perfectionist",
+      "rating": 3.5,
+      "reason": "Shared S creates common ground in patience and stability"
+    },
+    {
+      "rank": 5,
+      "pairing": "Persuader + Perfectionist",
+      "rating": 3.5,
+      "reason": "Tempered I/D energy + C/S grounding creates good balance"
+    }
+  ],
+  "most_challenging": [
+    {
+      "rank": 1,
+      "pairing": "Creative + Counselor",
+      "rating": 2.0,
+      "reason": "Maximum opposition on both axes; fundamentally different worldviews"
+    },
+    {
+      "rank": 2,
+      "pairing": "Developer + Developer",
+      "rating": 2.0,
+      "reason": "Power struggles; both want control; no one compromises"
+    },
+    {
+      "rank": 3,
+      "pairing": "Developer + Counselor",
+      "rating": 2.5,
+      "reason": "Pure D force vs warmth/empathy; Counselor can't voice needs"
+    },
+    {
+      "rank": 4,
+      "pairing": "Promoter + Perfectionist",
+      "rating": 2.5,
+      "reason": "Maximum pace and energy mismatch; spontaneity vs structure"
+    },
+    {
+      "rank": 5,
+      "pairing": "Developer + Objective Thinker",
+      "rating": 2.5,
+      "reason": "Both task-focused and questioning; cold and competitive; no emotional warmth"
+    }
+  ],
+  "relationship_growth_areas": {
+    "D_patterns_must_learn": [
+      "Slowing down communication pace",
+      "Explaining 'why' behind decisions",
+      "Softening tone and word choice",
+      "Soliciting input before announcing decisions",
+      "Showing vulnerability occasionally"
+    ],
+    "I_patterns_must_learn": [
+      "Following through on commitments",
+      "Providing written details when needed",
+      "Respecting need for alone time",
+      "Managing enthusiasm to avoid overwhelming others",
+      "Attending to practical details"
+    ],
+    "S_patterns_must_learn": [
+      "Speaking up before resentment builds",
+      "Practicing assertiveness",
+      "Embracing necessary change",
+      "Stating needs directly",
+      "Engaging in conflict when needed"
+    ],
+    "C_patterns_must_learn": [
+      "Offering verbal appreciation",
+      "Accepting 'good enough' sometimes",
+      "Sharing feelings more openly",
+      "Tolerating ambiguity",
+      "Softening critical feedback"
+    ]
+  }
+}

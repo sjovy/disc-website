@@ -1,339 +1,65 @@
 {
   "metadata": {
-    "version": "1.0",
-    "source": "John Cleaver Self Discription (1956), Marston DISC Theory (1928)",
-    "validation": {
-      "cronbach_alpha": "0.60-0.93",
-      "test_retest_reliability": 0.89,
-      "total_combinations": 2041,
-      "profiles": 15
-    },
-    "languages": ["en", "sv"]
+    "version": "2.0",
+    "source": "Classical DISC 15-Pattern System, John Geier (1970s)",
+    "description": "Comprehensive behavioral profiles for all 15 Classical DISC patterns",
+    "dimensions_per_profile": 12,
+    "total_patterns": 15
   },
-
-  "assessment": {
-    "format": "forced_choice",
-    "total_questions": 24,
-    "options_per_question": 4,
-    "scoring_range": "0-24 per dimension",
-    "midline_threshold": 16
-  },
-
-  "questions": [
-    {
-      "id": 1,
-      "options": {
-        "A": "Restrained",
-        "B": "Forceful",
-        "C": "Careful",
-        "D": "Expressive"
-      }
+  "profile_families": {
+    "D_family": {
+      "name": "Dominance Family",
+      "description": "Task-oriented, fast-paced, focused on results. Drive to shape environment by overcoming opposition.",
+      "patterns": [
+        "Developer",
+        "Results-Oriented",
+        "Inspirational",
+        "Creative"
+      ]
     },
-    {
-      "id": 2,
-      "options": {
-        "A": "Pioneering",
-        "B": "Correct",
-        "C": "Exciting",
-        "D": "Satisfied"
-      }
+    "I_family": {
+      "name": "Influence Family",
+      "description": "People-oriented, fast-paced, focused on relationships. Drive to shape environment through influence and persuasion.",
+      "patterns": [
+        "Promoter",
+        "Persuader",
+        "Counselor",
+        "Appraiser"
+      ]
     },
-    {
-      "id": 3,
-      "options": {
-        "A": "Willing",
-        "B": "Animated",
-        "C": "Bold",
-        "D": "Precise"
-      }
+    "S_family": {
+      "name": "Steadiness Family",
+      "description": "People-oriented, measured pace, focused on cooperation. Drive for stability and harmonious relationships.",
+      "patterns": [
+        "Specialist",
+        "Agent",
+        "Achiever",
+        "Investigator"
+      ]
     },
-    {
-      "id": 4,
-      "options": {
-        "A": "Argumentative",
-        "B": "Doubting",
-        "C": "Indecisive",
-        "D": "Unpredictable"
-      }
-    },
-    {
-      "id": 5,
-      "options": {
-        "A": "Respectful",
-        "B": "Out-going",
-        "C": "Patient",
-        "D": "Daring"
-      }
-    },
-    {
-      "id": 6,
-      "options": {
-        "A": "Persuasive",
-        "B": "Self-reliant",
-        "C": "Logical",
-        "D": "Gentle"
-      }
-    },
-    {
-      "id": 7,
-      "options": {
-        "A": "Cautious",
-        "B": "Even-tempered",
-        "C": "Decisive",
-        "D": "Life-of-the-party"
-      }
-    },
-    {
-      "id": 8,
-      "options": {
-        "A": "Popular",
-        "B": "Assertive",
-        "C": "Perfectionist",
-        "D": "Generous"
-      }
-    },
-    {
-      "id": 9,
-      "options": {
-        "A": "Colorful",
-        "B": "Modest",
-        "C": "Easy-going",
-        "D": "Unyielding"
-      }
-    },
-    {
-      "id": 10,
-      "options": {
-        "A": "Systematic",
-        "B": "Optimistic",
-        "C": "Persistent",
-        "D": "Accommodating"
-      }
-    },
-    {
-      "id": 11,
-      "options": {
-        "A": "Relentless",
-        "B": "Humble",
-        "C": "Neighborly",
-        "D": "Talkative"
-      }
-    },
-    {
-      "id": 12,
-      "options": {
-        "A": "Friendly",
-        "B": "Observant",
-        "C": "Playful",
-        "D": "Strong-willed"
-      }
-    },
-    {
-      "id": 13,
-      "options": {
-        "A": "Charming",
-        "B": "Adventurous",
-        "C": "Disciplined",
-        "D": "Deliberate"
-      }
-    },
-    {
-      "id": 14,
-      "options": {
-        "A": "Restrained",
-        "B": "Steady",
-        "C": "Aggressive",
-        "D": "Attractive"
-      }
-    },
-    {
-      "id": 15,
-      "options": {
-        "A": "Enthusiastic",
-        "B": "Analytical",
-        "C": "Sympathetic",
-        "D": "Determined"
-      }
-    },
-    {
-      "id": 16,
-      "options": {
-        "A": "Commanding",
-        "B": "Impulsive",
-        "C": "Slow-paced",
-        "D": "Critical"
-      }
-    },
-    {
-      "id": 17,
-      "options": {
-        "A": "Consistent",
-        "B": "Force-of-character",
-        "C": "Lively",
-        "D": "Laid-back"
-      }
-    },
-    {
-      "id": 18,
-      "options": {
-        "A": "Influential",
-        "B": "Kind",
-        "C": "Independent",
-        "D": "Orderly"
-      }
-    },
-    {
-      "id": 19,
-      "options": {
-        "A": "Idealistic",
-        "B": "Popular",
-        "C": "Pleasant",
-        "D": "Out-spoken"
-      }
-    },
-    {
-      "id": 20,
-      "options": {
-        "A": "Impatient",
-        "B": "Serious",
-        "C": "Procrastinator",
-        "D": "Emotional"
-      }
-    },
-    {
-      "id": 21,
-      "options": {
-        "A": "Competitive",
-        "B": "Spontaneous",
-        "C": "Loyal",
-        "D": "Thoughtful"
-      }
-    },
-    {
-      "id": 22,
-      "options": {
-        "A": "Self-sacrificing",
-        "B": "Considerate",
-        "C": "Convincing",
-        "D": "Courageous"
-      }
-    },
-    {
-      "id": 23,
-      "options": {
-        "A": "Dependent",
-        "B": "Flighty",
-        "C": "Stoic",
-        "D": "Pushy"
-      }
-    },
-    {
-      "id": 24,
-      "options": {
-        "A": "Tolerant",
-        "B": "Conventional",
-        "C": "Stimulating",
-        "D": "Directing"
-      }
-    }
-  ],
-
-  "scoring_key": {
-    "1": {"A": "S", "B": "D", "C": "C", "D": "I"},
-    "2": {"A": "D", "B": "C", "C": "I", "D": "S"},
-    "3": {"A": "S", "B": "I", "C": "D", "D": "C"},
-    "4": {"A": "D", "B": "C", "C": "S", "D": "I"},
-    "5": {"A": "C", "B": "I", "C": "S", "D": "D"},
-    "6": {"A": "I", "B": "D", "C": "C", "D": "S"},
-    "7": {"A": "C", "B": "S", "C": "D", "D": "I"},
-    "8": {"A": "I", "B": "D", "C": "C", "D": "S"},
-    "9": {"A": "I", "B": "C", "C": "S", "D": "D"},
-    "10": {"A": "C", "B": "I", "C": "D", "D": "S"},
-    "11": {"A": "D", "B": "C", "C": "S", "D": "I"},
-    "12": {"A": "I", "B": "C", "C": "I", "D": "D"},
-    "13": {"A": "I", "B": "D", "C": "C", "D": "S"},
-    "14": {"A": "S", "B": "S", "C": "D", "D": "I"},
-    "15": {"A": "I", "B": "C", "C": "S", "D": "D"},
-    "16": {"A": "D", "B": "I", "C": "S", "D": "C"},
-    "17": {"A": "C", "B": "D", "C": "I", "D": "S"},
-    "18": {"A": "I", "B": "S", "C": "D", "D": "C"},
-    "19": {"A": "C", "B": "I", "C": "S", "D": "D"},
-    "20": {"A": "D", "B": "C", "C": "S", "D": "I"},
-    "21": {"A": "D", "B": "I", "C": "S", "D": "C"},
-    "22": {"A": "S", "B": "S", "C": "I", "D": "D"},
-    "23": {"A": "S", "B": "I", "C": "S", "D": "D"},
-    "24": {"A": "S", "B": "C", "C": "I", "D": "D"}
-  },
-
-  "dimensions": {
-    "D": {
-      "name": "Dominance",
-      "swedish": "Dominant",
-      "color": "Red",
-      "swedish_color": "Röd",
-      "focus": "Results, challenges, action",
-      "motivators": ["New challenges", "Winning", "Opportunities", "Control", "Achievement"],
-      "fears": ["Loss of control", "Being taken advantage of", "Vulnerability"],
-      "behaviors": ["Direct", "Forceful", "Decisive", "Competitive", "Risk-taking", "Results-driven"],
-      "strengths": ["Problem solver", "Self-starter", "Innovative", "Drives projects forward", "Quick decisions"],
-      "limitations": ["Oversteps authority", "Argumentative", "Insensitive to others", "Impatient", "Poor listener"],
-      "communication_style": "Direct, brief, bottom-line oriented",
-      "motto": "Get it done now",
-      "swedish_description": "Lägger tonvikten på resultat, utmaning, noggrannhet"
-    },
-    "I": {
-      "name": "Influence",
-      "swedish": "Influerande",
-      "color": "Yellow",
-      "swedish_color": "Gul",
-      "focus": "People, enthusiasm, collaboration",
-      "motivators": ["Social recognition", "Popularity", "Approval", "Collaboration", "Group activities"],
-      "fears": ["Social rejection", "Loss of influence", "Disapproval", "Isolation"],
-      "behaviors": ["Enthusiastic", "Trusting", "Optimistic", "Expressive", "Persuasive", "Sociable"],
-      "strengths": ["Great encourager", "Motivator", "Creative problem solver", "Builds relationships", "Generates enthusiasm"],
-      "limitations": ["Inattentive to detail", "Disorganized", "Short attention span", "Overcommits", "Avoids conflict"],
-      "communication_style": "Enthusiastic, collaborative, story-driven",
-      "motto": "Let's do this together!",
-      "swedish_description": "Lägger tonvikten på att påverka andra, öppenhet, relationer"
-    },
-    "S": {
-      "name": "Steadiness",
-      "swedish": "Stabil",
-      "color": "Green",
-      "swedish_color": "Grön",
-      "focus": "Cooperation, stability, sincerity",
-      "motivators": ["Harmony", "Security", "Sincere appreciation", "Predictability", "Belonging"],
-      "fears": ["Change", "Loss of security", "Conflict", "Uncertainty", "Instability"],
-      "behaviors": ["Patient", "Predictable", "Calm", "Loyal", "Supportive", "Good listener"],
-      "strengths": ["Reliable", "Team player", "Empathetic", "Good listener", "Creates stability", "Consistent"],
-      "limitations": ["Resistant to change", "Avoids confrontation", "Slow to decide", "Overly accommodating", "Lacks assertiveness"],
-      "communication_style": "Supportive, democratic, relationship-focused",
-      "motto": "Let's keep things stable",
-      "swedish_description": "Lägger tonvikten på samarbete, uppriktighet, pålitlighet"
-    },
-    "C": {
-      "name": "Conscientiousness",
-      "swedish": "Strukturerad",
-      "color": "Blue",
-      "swedish_color": "Blå",
-      "focus": "Quality, accuracy, expertise",
-      "motivators": ["Opportunities for quality work", "Correctness", "Recognition for expertise", "Clear standards"],
-      "fears": ["Criticism", "Being wrong", "Chaos", "Mistakes", "Irrational acts"],
-      "behaviors": ["Analytical", "Systematic", "Cautious", "Precise", "Diplomatic", "Detail-oriented"],
-      "strengths": ["Thorough", "Organized", "Maintains high standards", "Quality control", "Critical thinking"],
-      "limitations": ["Bound by procedures", "Overly critical", "Analysis paralysis", "Hesitant", "Perfectionist"],
-      "communication_style": "Detailed, factual, logical, prefers written",
-      "motto": "Do it right or don't do it",
-      "swedish_description": "Lägger tonvikten på kvalité, detaljer, kompetens"
+    "C_family": {
+      "name": "Conscientiousness Family",
+      "description": "Task-oriented, measured pace, focused on quality. Drive for accuracy and expertise.",
+      "patterns": [
+        "Objective Thinker",
+        "Perfectionist",
+        "Practitioner"
+      ]
     }
   },
-
   "profiles": {
     "Developer": {
       "family": "Dominance",
       "pattern": "Pure D",
       "disc_combination": "D high (only dimension above midline); I, S, C all low",
-      "alternative_names": ["Pure D", "High D", "Dominant", "Commander", "Driver", "Conductor"],
+      "alternative_names": [
+        "Pure D",
+        "High D",
+        "Dominant",
+        "Commander",
+        "Driver",
+        "Conductor"
+      ],
       "description": "Developers are self-reliant individuals who seek their own creative and individualistic solutions to problems. Strong-willed and free from constraining influences, they are most interested in opportunities for advancement and accomplishing self-set goals. A challenge to them is 'like meat to a lion.' They have high expectations of themselves and others and become critical when standards are not met. Their intense focus on results can make them seem impatient and uncaring.",
       "core_strengths": [
         "Innovative problem-solving",
@@ -357,19 +83,36 @@
       "communication_style": "Direct, blunt, bottom-line oriented. Prefers brief exchanges with minimal small talk. Dislikes repeating information or generalizations. Focuses narrowly on solutions, not problems. Values efficiency above all in communication.",
       "work_environment": "Needs variety of challenges and room for independence. Dislikes routine work. Prefers fast-paced, results-driven settings with opportunities for advancement and freedom to shape their own approach.",
       "leadership_style": "Commanding and decisive. Takes charge naturally, makes quick decisions, provides clarity during uncertainty. Excels in crisis situations where speed is essential. May bulldoze team input and move too quickly without bringing others along.",
-      "stress_triggers": ["Loss of control", "Loss of new opportunities", "Being limited or micromanaged", "Indecision in others", "Routine", "Slow progress"],
+      "stress_triggers": [
+        "Loss of control",
+        "Loss of new opportunities",
+        "Being limited or micromanaged",
+        "Indecision in others",
+        "Routine",
+        "Slow progress"
+      ],
       "stress_behaviors": "Becomes belligerent, impatient, harsh, and may monopolize conversations or railroad decisions",
-      "motivation_drivers": ["Challenge and new opportunities", "Achievement", "Control over environment", "Independence and autonomy", "Power, winning, and variety"],
-      "decision_making": "Quick and decisive—acts immediately and adjusts later rather than analyzing extensively. Views time as a critical asset.",
+      "motivation_drivers": [
+        "Challenge and new opportunities",
+        "Achievement",
+        "Control over environment",
+        "Independence and autonomy",
+        "Power, winning, and variety"
+      ],
+      "decision_making": "Quick and decisiveâ€”acts immediately and adjusts later rather than analyzing extensively. Views time as a critical asset.",
       "conflict_style": "Head-on. Addresses issues quickly and decisively. Direct and assertive. May assert views so strongly others feel pressured into agreement. Competitive approach creates win/lose dynamics. Respects equally direct opponents.",
-      "team_value": "Innovative problem solver—the buck stops with them"
+      "team_value": "Innovative problem solverâ€”the buck stops with them"
     },
-
     "Results_Oriented": {
       "family": "Dominance",
       "pattern": "D/I",
       "disc_combination": "D high (primary); I moderate-high (secondary above midline); S and C low",
-      "alternative_names": ["Result-Oriented", "Di style", "Driver-Influencer", "Bold Achiever"],
+      "alternative_names": [
+        "Result-Oriented",
+        "Di style",
+        "Driver-Influencer",
+        "Bold Achiever"
+      ],
       "description": "Results-Oriented individuals seek to accomplish results above all else. They value independence and display a self-confidence that some perceive as arrogance. Competitive by nature, they gravitate toward difficult tasks and high positions. They exude a sense of self-importance and display visible self-satisfaction when completing responsibilities. The key distinction from the Developer is that the I secondary gives them more social awareness, though they primarily channel this social energy toward driving results rather than building relationships for their own sake.",
       "core_strengths": [
         "Persistence and determination",
@@ -392,21 +135,35 @@
       ],
       "communication_style": "Direct and forceful. High confidence in self-expression. Values efficiency. More socially aware than the Developer due to I secondary but uses charm strategically for results. Critical and fault-finding when displeased.",
       "work_environment": "High positions with independence and control. Competitive environments with difficult, challenging tasks. Freedom from routine. Results-driven culture valuing measurable accomplishment and recognition.",
-      "leadership_style": "Leads with determination and force of character. Sets high standards. Creates competitive dynamics. Most effective when channeling the I secondary—practicing patience, showing concern, and soliciting team input.",
-      "stress_triggers": ["Routine work", "Slow-thinking colleagues", "Loss of control or independence"],
+      "leadership_style": "Leads with determination and force of character. Sets high standards. Creates competitive dynamics. Most effective when channeling the I secondaryâ€”practicing patience, showing concern, and soliciting team input.",
+      "stress_triggers": [
+        "Routine work",
+        "Slow-thinking colleagues",
+        "Loss of control or independence"
+      ],
       "stress_behaviors": "Becomes fault-finding, critical, oversteps boundaries. Competitive behaviors escalate",
-      "motivation_drivers": ["Control, dominance, and independence", "Difficult tasks and high positions", "Accomplishing visible results", "Self-satisfaction from achievement", "Competition and winning"],
+      "motivation_drivers": [
+        "Control, dominance, and independence",
+        "Difficult tasks and high positions",
+        "Accomplishing visible results",
+        "Self-satisfaction from achievement",
+        "Competition and winning"
+      ],
       "decision_making": "Quick and decisive. Judges decisions by whether they produce results. Would benefit from slowing down to think through consequences.",
       "conflict_style": "Directly confrontational. Persistent even facing antagonism. Blunt and uncaring in disputes. Creates win/lose through competition. Critical and fault-finding when stressed.",
       "team_value": "Persistence and determination"
     },
-
     "Inspirational": {
       "family": "Dominance",
-      "pattern": "D≈I",
+      "pattern": "Dâ‰ˆI",
       "disc_combination": "D high (primary, slightly above I); I high (nearly equal to D, both above midline); S and C low",
-      "alternative_names": ["Di blend (equal)", "Motivator", "Mover-and-Shaker", "Charismatic Leader"],
-      "description": "Inspirational individuals influence the thoughts and actions of others, directing behavior toward predetermined goals. The defining characteristic is that D and I are nearly equal—the I is 'not much lower than the D.' This near-equality produces a fundamentally different behavioral approach: Inspirational people prefer to work with others through cooperation and persuasion rather than domination. They offer others what they want and need—such as power, security, or recognition—strategically to meet their own objectives. They are the quintessential 'movers and shakers' who initiate action and demand results.",
+      "alternative_names": [
+        "Di blend (equal)",
+        "Motivator",
+        "Mover-and-Shaker",
+        "Charismatic Leader"
+      ],
+      "description": "Inspirational individuals influence the thoughts and actions of others, directing behavior toward predetermined goals. The defining characteristic is that D and I are nearly equalâ€”the I is 'not much lower than the D.' This near-equality produces a fundamentally different behavioral approach: Inspirational people prefer to work with others through cooperation and persuasion rather than domination. They offer others what they want and needâ€”such as power, security, or recognitionâ€”strategically to meet their own objectives. They are the quintessential 'movers and shakers' who initiate action and demand results.",
       "core_strengths": [
         "Powerful influence over others' thoughts and actions",
         "Charming and persuasive",
@@ -428,20 +185,35 @@
       ],
       "communication_style": "Persuasive and charming. Alternates between cooperation and domination. Offers people what they need to gain cooperation. More socially sophisticated than Developer or Results-Oriented. Uses emotional appeals strategically.",
       "work_environment": "Needs fun and variety. Frequent change desirable. Resists systematic, detailed work. Wants control of environment and objectives. Positions with visible social status and authority.",
-      "leadership_style": "Leads through influence and persuasion rather than pure domination. Charismatic and inspirational. Sets predetermined goals and directs behavior toward them. Strategic—offers followers what they need in exchange for support. Most effective when making others feel success is shared.",
-      "stress_triggers": ["Loss of social status", "Appearing weak", "Inability to influence others", "Environments requiring detailed work"],
+      "leadership_style": "Leads through influence and persuasion rather than pure domination. Charismatic and inspirational. Sets predetermined goals and directs behavior toward them. Strategicâ€”offers followers what they need in exchange for support. Most effective when making others feel success is shared.",
+      "stress_triggers": [
+        "Loss of social status",
+        "Appearing weak",
+        "Inability to influence others",
+        "Environments requiring detailed work"
+      ],
       "stress_behaviors": "Becomes manipulative, belligerent, or quarrelsome. 'Ends justify the means' thinking intensifies",
-      "motivation_drivers": ["Control of environment and objectives", "Social status and position", "Being seen as strong and influential", "Achievement of predetermined goals", "Power and authority"],
-      "decision_making": "Decisive with clear results in mind. More collaborative than Developer or Results-Oriented—considers how to bring others along. Still driven by own objectives but frames decisions to appeal to others.",
+      "motivation_drivers": [
+        "Control of environment and objectives",
+        "Social status and position",
+        "Being seen as strong and influential",
+        "Achievement of predetermined goals",
+        "Power and authority"
+      ],
+      "decision_making": "Decisive with clear results in mind. More collaborative than Developer or Results-Orientedâ€”considers how to bring others along. Still driven by own objectives but frames decisions to appeal to others.",
       "conflict_style": "Combination of charm and force. May alternate between persuasion and intimidation. Can become manipulative. Creates push-pull dynamics. Prefers winning through influence; resorts to aggression when charm fails.",
       "team_value": "Coalition building and influence"
     },
-
     "Creative": {
       "family": "Dominance",
       "pattern": "D/C",
       "disc_combination": "D high (primary); C high (secondary); I and S low",
-      "alternative_names": ["DC style", "Resolute", "Driver-Analyst", "Architect"],
+      "alternative_names": [
+        "DC style",
+        "Resolute",
+        "Driver-Analyst",
+        "Architect"
+      ],
       "description": "The Creative pattern expresses opposing behavioral forces. These individuals desire immediate results (D) yet have an equally strong desire for perfection (C). You observe aggression tempered by sensitivity, quick thinking balanced by thorough option exploration. This internal tension between 'act fast' and 'be precise' produces both excellence and personal conflict. They want the freedom to explore and the authority to test and re-test findings. They are uniquely positioned as change agents because they combine the drive to push for results with the analytical rigor to ensure quality.",
       "core_strengths": [
         "Positive change agent",
@@ -467,21 +239,41 @@
       ],
       "communication_style": "Private and restrained. Direct and blunt without softening messages. More comfortable with important messages in writing (C influence). Expects logic and supporting data from others. Should offer explanations of reasoning to gain cooperation.",
       "work_environment": "Freedom to explore and authority to test findings. Values both innovation and quality. Dislikes routine. Wants unique accomplishments. Needs independence but demands high standards. Prefers challenging goals with freedom to plan approach.",
-      "leadership_style": "Resolute Leadership—determined, persistent, gives courage during hard times. Natural skeptics. Sets high standards. Spots inefficiencies. Has 'fighting spirit.' Creates rules and processes. May encourage too much research when action is needed. Might ignore emotional impact of logically sound decisions.",
-      "stress_triggers": ["Failure to accomplish goals", "Lack of influence", "Routine", "Having to share control", "Incompetence in others"],
+      "leadership_style": "Resolute Leadershipâ€”determined, persistent, gives courage during hard times. Natural skeptics. Sets high standards. Spots inefficiencies. Has 'fighting spirit.' Creates rules and processes. May encourage too much research when action is needed. Might ignore emotional impact of logically sound decisions.",
+      "stress_triggers": [
+        "Failure to accomplish goals",
+        "Lack of influence",
+        "Routine",
+        "Having to share control",
+        "Incompetence in others"
+      ],
       "stress_behaviors": "Becomes independent and bored. Sulks. Withdraws. Internal D/C conflict intensifies. Becomes more blunt and critical",
-      "motivation_drivers": ["Unique accomplishments", "Innovation and being a change agent", "Freedom to explore", "Developing systems", "High standards and excellence", "Challenging goals with systematic planning", "Authority and influence"],
-      "decision_making": "Signature dual approach—daily/routine decisions are quick and easy (D leads), while major/significant decisions involve extreme caution (C leads). Weighs pros and cons. Explores all options before committing on important matters.",
-      "conflict_style": "Faces issues head-on and seeks them out proactively. Uses logic and facts rather than emotions. May become blunt and demeaning toward perceived incompetence. Won't yield easily—fighting spirit. May sulk or withdraw rather than engage emotionally.",
+      "motivation_drivers": [
+        "Unique accomplishments",
+        "Innovation and being a change agent",
+        "Freedom to explore",
+        "Developing systems",
+        "High standards and excellence",
+        "Challenging goals with systematic planning",
+        "Authority and influence"
+      ],
+      "decision_making": "Signature dual approachâ€”daily/routine decisions are quick and easy (D leads), while major/significant decisions involve extreme caution (C leads). Weighs pros and cons. Explores all options before committing on important matters.",
+      "conflict_style": "Faces issues head-on and seeks them out proactively. Uses logic and facts rather than emotions. May become blunt and demeaning toward perceived incompetence. Won't yield easilyâ€”fighting spirit. May sulk or withdraw rather than engage emotionally.",
       "team_value": "Positive change agent"
     },
-
     "Promoter": {
       "family": "Influence",
       "pattern": "Pure I",
       "disc_combination": "I high (only dimension above midline); D, S, C all low",
-      "alternative_names": ["Pure I", "The Motivator", "Enthusiast", "Influencer", "Entertainer", "Socializer"],
-      "description": "Promoters are the quintessential people persons. Social and gregarious, they cast a large net of friends and colleagues and are exceptional at maintaining contact with their network. They are verbally skilled, generous with support for others' projects, and their extensive network provides resources for their own initiatives in return. They are more interested in interaction than accomplishment. Their personality radiates enthusiasm, spontaneity, openness, optimism, warmth, and expressiveness. They possess a magnetic quality—walking into a room of strangers feels like an opportunity, not a challenge.",
+      "alternative_names": [
+        "Pure I",
+        "The Motivator",
+        "Enthusiast",
+        "Influencer",
+        "Entertainer",
+        "Socializer"
+      ],
+      "description": "Promoters are the quintessential people persons. Social and gregarious, they cast a large net of friends and colleagues and are exceptional at maintaining contact with their network. They are verbally skilled, generous with support for others' projects, and their extensive network provides resources for their own initiatives in return. They are more interested in interaction than accomplishment. Their personality radiates enthusiasm, spontaneity, openness, optimism, warmth, and expressiveness. They possess a magnetic qualityâ€”walking into a room of strangers feels like an opportunity, not a challenge.",
       "core_strengths": [
         "Exceptional networking",
         "Relieves tension and promotes projects",
@@ -503,23 +295,43 @@
         "Struggles with follow-through",
         "Avoids decisions risking disapproval"
       ],
-      "communication_style": "Expressive, animated, casual, friendly. Prefers face-to-face over written communication. Uses stories, humor, and personal anecdotes. Appreciates when others match their energy. Wants flexible agendas with personal connection before business. Sensitive to criticism—needs positive feedback before areas for improvement.",
+      "communication_style": "Expressive, animated, casual, friendly. Prefers face-to-face over written communication. Uses stories, humor, and personal anecdotes. Appreciates when others match their energy. Wants flexible agendas with personal connection before business. Sensitive to criticismâ€”needs positive feedback before areas for improvement.",
       "work_environment": "Popularity and social recognition; freedom of expression; group activities; democratic relationships; freedom from control and detail; opportunities to verbalize proposals; favorable, friendly working conditions; variety and collaboration",
       "leadership_style": "Leads through charm, charisma, and enthusiasm. Creates interactive, positive environments. Natural team-builder. Diffuses conflict using humor. Extremely persuasive. May take hands-off approach risking being seen as unresponsive. Places too much trust in others. Needs to be firmer with deadlines and accountability.",
-      "stress_triggers": ["Social rejection", "Isolation", "Exclusion from events", "Being pushed to be thorough", "Rigid routines", "Working alone"],
+      "stress_triggers": [
+        "Social rejection",
+        "Isolation",
+        "Exclusion from events",
+        "Being pushed to be thorough",
+        "Rigid routines",
+        "Working alone"
+      ],
       "stress_behaviors": "Becomes careless, sentimental, disorganized, scattered",
-      "motivation_drivers": ["Social acceptance and popularity", "Approval", "New adventures", "Interacting with diverse groups", "Open, flexible schedules", "Thinking on their feet", "Bouncing between ideas"],
-      "decision_making": "Intuitive and fast—gut feel over facts. Makes favorable assumptions without complete information. Tends to overestimate outcomes. Needs others who supply facts, data, and systematic approaches.",
+      "motivation_drivers": [
+        "Social acceptance and popularity",
+        "Approval",
+        "New adventures",
+        "Interacting with diverse groups",
+        "Open, flexible schedules",
+        "Thinking on their feet",
+        "Bouncing between ideas"
+      ],
+      "decision_making": "Intuitive and fastâ€”gut feel over facts. Makes favorable assumptions without complete information. Tends to overestimate outcomes. Needs others who supply facts, data, and systematic approaches.",
       "conflict_style": "Avoids conflict, hoping problems resolve. Uses humor to deflect. Prefers keeping things light. May smooth over without genuine resolution. Risk of personal attacks or talking over others when escalated.",
       "team_value": "Energy and enthusiasm"
     },
-
     "Persuader": {
       "family": "Influence",
       "pattern": "I/D",
       "disc_combination": "I high (primary); D moderate-high (secondary); S and C low",
-      "alternative_names": ["iD style", "The Influencer", "Motivator", "Enthusiast", "Change Agent"],
-      "description": "Persuaders love working with and through people to accomplish their own objectives. Their outgoing and persuasive personalities easily gain support and respect. They impress others and sell themselves using 'winning ways.' What sets them apart from Promoters is the addition of Dominance energy—they don't just socialize, they socialize with purpose and drive. They are the most impulsive and persuasive of all I styles—fast-paced, active, charming, passionate, charismatic, bold, comfortable improvising, ambitious, self-promoting, and adventurous.",
+      "alternative_names": [
+        "iD style",
+        "The Influencer",
+        "Motivator",
+        "Enthusiast",
+        "Change Agent"
+      ],
+      "description": "Persuaders love working with and through people to accomplish their own objectives. Their outgoing and persuasive personalities easily gain support and respect. They impress others and sell themselves using 'winning ways.' What sets them apart from Promoters is the addition of Dominance energyâ€”they don't just socialize, they socialize with purpose and drive. They are the most impulsive and persuasive of all I stylesâ€”fast-paced, active, charming, passionate, charismatic, bold, comfortable improvising, ambitious, self-promoting, and adventurous.",
       "core_strengths": [
         "Sells and closes",
         "Poised and confident",
@@ -545,20 +357,40 @@
       "communication_style": "Fast-paced, enthusiastic, animated, persuasive. Uses friendly, open manner. Judges others by flexibility and expressiveness. Engages with stories and high-level ideas. Discusses future possibilities rather than past details. More direct than Promoter due to D influence.",
       "work_environment": "Working with people; challenging assignments; variety and mobility; opportunities for status and prestige; freedom from routine; fast-paced with new opportunities; brainstorming sessions",
       "leadership_style": "Leads through enthusiasm and personal charm. Generates excitement for challenging goals. Bold and impulsive. Thrives in fast-paced or unconventional settings. Combines ownership of results with natural charisma. More results-driven than Promoter.",
-      "stress_triggers": ["Fixed environment", "Complex relationships", "Lack of variety", "Boring tasks", "Strict routines"],
+      "stress_triggers": [
+        "Fixed environment",
+        "Complex relationships",
+        "Lack of variety",
+        "Boring tasks",
+        "Strict routines"
+      ],
       "stress_behaviors": "Becomes indecisive and easily persuaded; organizes to 'look good' rather than genuinely; becomes scattered",
-      "motivation_drivers": ["Status, prestige, and authority", "New opportunities", "Diverse interactions", "Fostering relationships", "Exploring multiple ideas", "Group discussions", "Challenging assignments with visible outcomes"],
+      "motivation_drivers": [
+        "Status, prestige, and authority",
+        "New opportunities",
+        "Diverse interactions",
+        "Fostering relationships",
+        "Exploring multiple ideas",
+        "Group discussions",
+        "Challenging assignments with visible outcomes"
+      ],
       "decision_making": "Intuitive and fast, trusts gut instinct. Once alerted to importance of details, can use analytical data effectively. Benefits from systematic data, planning, and risk-management built into processes.",
       "conflict_style": "Uses direct approach with proposed solutions. More willing to confront than Promoter due to D influence. Can become impatient during prolonged discussions. Combines persuasive charm with directness. May try to 'win' through force of personality.",
       "team_value": "Selling and persuasion"
     },
-
     "Counselor": {
       "family": "Influence",
       "pattern": "I/S",
       "disc_combination": "I high (primary); S moderate-high (secondary); D and C low",
-      "alternative_names": ["iS style", "The Encourager", "Coach", "Harmonizer", "Supporter", "Open style"],
-      "description": "Counselors embrace others with warmth, empathy, and understanding. They are long-term relationship builders, good listeners, and effective problem-solvers who use an indirect approach. They put people first, providing recognition and attributing less importance to task accomplishment. Of all DISC profiles, Counselors are probably the most effective at relating to other people in an all-round sense. They socialize easily and feel at ease with strangers. They are persuasive and charming, but the Steadiness element allows them to adopt a more open, relaxed approach—becoming less directly active and more receptive to others' ideas and feelings.",
+      "alternative_names": [
+        "iS style",
+        "The Encourager",
+        "Coach",
+        "Harmonizer",
+        "Supporter",
+        "Open style"
+      ],
+      "description": "Counselors embrace others with warmth, empathy, and understanding. They are long-term relationship builders, good listeners, and effective problem-solvers who use an indirect approach. They put people first, providing recognition and attributing less importance to task accomplishment. Of all DISC profiles, Counselors are probably the most effective at relating to other people in an all-round sense. They socialize easily and feel at ease with strangers. They are persuasive and charming, but the Steadiness element allows them to adopt a more open, relaxed approachâ€”becoming less directly active and more receptive to others' ideas and feelings.",
       "core_strengths": [
         "Exceptional listening skills and empathy",
         "Stability and predictability",
@@ -584,20 +416,37 @@
       "communication_style": "Shows kindness, empathy, and understanding. Lets others initiate action. Interested in meeting people. Usually calm and controlled. Uses indirect, gentle approach. Influences through sincere personal relationships and availability. Provides verbal encouragement. Avoids criticism and confrontation.",
       "work_environment": "Collaborative, harmonious environments; friendship and peaceful surroundings; appreciation and recognition; stability and predictability; team-oriented with close working relationships; minimal conflict; opportunities to coach and develop others",
       "leadership_style": "Friendly and collaborative. Creates warm, inclusive environments with strong team cohesion. May avoid necessary conflict. Provides adequate recognition. Leads by example of care and empathy. Prefers consensus-building over directive leadership. Difficulty making tough decisions or giving critical feedback.",
-      "stress_triggers": ["Pressuring people", "Being accused of causing harm", "Dissension and conflict", "Being disliked", "Aggressive environments", "Confrontation"],
+      "stress_triggers": [
+        "Pressuring people",
+        "Being accused of causing harm",
+        "Dissension and conflict",
+        "Being disliked",
+        "Aggressive environments",
+        "Confrontation"
+      ],
       "stress_behaviors": "Becomes overly flexible and intimate; too trusting without differentiating; may use key friendships to influence outcomes",
-      "motivation_drivers": ["Collaboration, friendship, and peaceful environment", "Appreciation and recognition", "Feeling respected and liked", "Understanding human impact of decisions", "Teaching and coaching", "Group brainstorming"],
-      "decision_making": "People-focused—considers human impact above all. Indirect and consensus-seeking. Difficulty making unpopular decisions. Prefers gathering input. Avoids decisions that might harm people. Benefits from external structure and deadlines.",
+      "motivation_drivers": [
+        "Collaboration, friendship, and peaceful environment",
+        "Appreciation and recognition",
+        "Feeling respected and liked",
+        "Understanding human impact of decisions",
+        "Teaching and coaching",
+        "Group brainstorming"
+      ],
+      "decision_making": "People-focusedâ€”considers human impact above all. Indirect and consensus-seeking. Difficulty making unpopular decisions. Prefers gathering input. Avoids decisions that might harm people. Benefits from external structure and deadlines.",
       "conflict_style": "Strongly conflict-averse. Uses indirect approach. Approaches calmly and privately. Acknowledges feelings first. Focuses on solutions not blame. May tolerate negative situations rather than confronting. Will mediate between others. Takes criticism personally but responds well to gentle feedback.",
       "team_value": "Relationship building and harmony"
     },
-
     "Appraiser": {
       "family": "Influence",
       "pattern": "I/C",
       "disc_combination": "I high (primary); C moderate-high (secondary); D and S low",
-      "alternative_names": ["Elevated IC Pattern", "Assessor", "Evaluator"],
-      "description": "The Appraiser is one of the rarest classical patterns because I and C are theoretically opposite dimensions—I is accepting/people-focused/fast-paced while C is questioning/logic-focused/moderate-paced. Appraisers tend to be strong communicators: C's measure words carefully while I's are naturally skilled at influencing others. The hallmark of this profile is that the individual may exhibit either influencing or compliance behaviors depending on the situation. The two factors constantly compete for behavioral 'governorship.' In social/trusting environments, the I side emerges; in structured/formal settings, the C side dominates. They have a strong drive to be successful and appear accomplished—reaching goals is important, but they want success with flair and triumph with style.",
+      "alternative_names": [
+        "Elevated IC Pattern",
+        "Assessor",
+        "Evaluator"
+      ],
+      "description": "The Appraiser is one of the rarest classical patterns because I and C are theoretically opposite dimensionsâ€”I is accepting/people-focused/fast-paced while C is questioning/logic-focused/moderate-paced. Appraisers tend to be strong communicators: C's measure words carefully while I's are naturally skilled at influencing others. The hallmark of this profile is that the individual may exhibit either influencing or compliance behaviors depending on the situation. The two factors constantly compete for behavioral 'governorship.' In social/trusting environments, the I side emerges; in structured/formal settings, the C side dominates. They have a strong drive to be successful and appear accomplishedâ€”reaching goals is important, but they want success with flair and triumph with style.",
       "core_strengths": [
         "Strong communication blending measured words with natural influence",
         "Accomplishes goals with teams",
@@ -623,19 +472,39 @@
       "communication_style": "Strong verbal communicators who measure words carefully. Assertive but considerate tone. Uses persuasion and involvement rather than commands. Explains rationale to elicit cooperation. In social situations: friendly, animated, engaging. In formal situations: more blunt, plain-speaking, driven. Discreetly wants attention.",
       "work_environment": "Environments balancing social interaction with quality standards; opportunities to lead team projects; settings allowing creative thinking AND structured execution; competitive with friendly rivalry; clear expectations with freedom to innovate",
       "leadership_style": "Leads through combination of persuasion and planning. Involves people through explanation. Helps teams visualize steps and goals. Values teamwork but craves authority. Uses courtesy but is assertive when necessary. Encourages friendly competition. May become authoritarian when standards aren't maintained.",
-      "stress_triggers": ["Failure or 'loss'", "Others' disapproval", "Looking bad", "Standards not maintained", "Extensive follow-through required"],
+      "stress_triggers": [
+        "Failure or 'loss'",
+        "Others' disapproval",
+        "Looking bad",
+        "Standards not maintained",
+        "Extensive follow-through required"
+      ],
       "stress_behaviors": "Becomes restless, critical, impatient; may become authoritarian or caustic; verbal criticism increases; competitive drive intensifies",
-      "motivation_drivers": ["'Winning with flair! Victory!'", "Being successful and appearing accomplished", "Appreciation for victories", "Success with style", "Competitive recognition", "Accomplishing goals with team", "Clear expectations", "Attention and approval"],
+      "motivation_drivers": [
+        "'Winning with flair! Victory!'",
+        "Being successful and appearing accomplished",
+        "Appreciation for victories",
+        "Success with style",
+        "Competitive recognition",
+        "Accomplishing goals with team",
+        "Clear expectations",
+        "Attention and approval"
+      ],
       "decision_making": "Blends intuitive I-style thinking with analytical C-style evaluation. Makes creative ideas serve practical purposes. Develops detailed action plans. Prefers orderly, step-by-step progress. Can be decisive but may waver between gut instinct and analytical assessment.",
-      "conflict_style": "Competitive—wants to 'win.' Uses persuasion first but can become authoritarian. May become caustic in criticism. Lacks empathy when expressing disapproval (growth area). When C-side dominates: may comply rather than confront. When I-side dominates: tries to communicate and influence.",
+      "conflict_style": "Competitiveâ€”wants to 'win.' Uses persuasion first but can become authoritarian. May become caustic in criticism. Lacks empathy when expressing disapproval (growth area). When C-side dominates: may comply rather than confront. When I-side dominates: tries to communicate and influence.",
       "team_value": "Analytical communication"
     },
-
     "Specialist": {
       "family": "Steadiness",
       "pattern": "Pure S",
       "disc_combination": "S high (only dimension above midline); D, I, C all low",
-      "alternative_names": ["Pure S", "Steady", "Stabilizer", "Supporter", "Dove"],
+      "alternative_names": [
+        "Pure S",
+        "Steady",
+        "Stabilizer",
+        "Supporter",
+        "Dove"
+      ],
       "description": "Specialists 'wear well' with others. With their moderate, controlled stance and modest demeanor, they work effectively with many behavioral styles. They are considerate, patient, and always ready to help those they consider friends. They build close relationships with a relatively small group of associates in the work environment, directing efforts toward retaining familiar and predictable patterns. Most effective in specialized areas, Specialists plan their work along directed channels and achieve a remarkably consistent performance. Appreciation from others helps maintain that level of consistency.",
       "core_strengths": [
         "Loyal, precise, dependable, methodical",
@@ -659,23 +528,41 @@
         "Difficulty saying 'no'",
         "May become demotivated if forced to change without reason"
       ],
-      "communication_style": "Prefers one-on-one over group settings. Answers when asked but prefers listening. Speaks calmly and amiably. Seeks trust during interactions. Explains things thoroughly. Indirect and non-confrontational. Signs of tension are subtle—may not speak up if offended.",
+      "communication_style": "Prefers one-on-one over group settings. Answers when asked but prefers listening. Speaks calmly and amiably. Seeks trust during interactions. Explains things thoroughly. Indirect and non-confrontational. Signs of tension are subtleâ€”may not speak up if offended.",
       "work_environment": "Status quo maintained unless given clear reasons for change; predictable routines; credit and sincere appreciation for work; minimal work infringement on home life; identification with a group; minimal conflict; clearly defined expectations",
       "leadership_style": "Authority based on experience and expertise. Comfortable maintaining routines. Prefers supportive/servant leadership. Leads by example through consistent performance. Works behind the scenes supporting others.",
-      "stress_triggers": ["Sudden plan changes", "Unexpected uncertainties", "Being unrecognized", "Making reactive decisions", "Aggressively competitive environments", "Change, chaos, disorganization"],
+      "stress_triggers": [
+        "Sudden plan changes",
+        "Unexpected uncertainties",
+        "Being unrecognized",
+        "Making reactive decisions",
+        "Aggressively competitive environments",
+        "Change, chaos, disorganization"
+      ],
       "stress_behaviors": "Capitulates to authority; thinks with the group; passive resistance; withdraws; internalizes",
-      "motivation_drivers": ["Controlled, stable environment", "Maintaining status quo", "Security and consistency", "Sincere appreciation", "Predictable routines", "Clear expectations", "Being valued for specialized competence"],
-      "decision_making": "Deliberate and methodical—needs time. Prefers proven approaches. Conservative. Requires clear information before deciding. Seeks consensus. Avoids decisions creating conflict.",
+      "motivation_drivers": [
+        "Controlled, stable environment",
+        "Maintaining status quo",
+        "Security and consistency",
+        "Sincere appreciation",
+        "Predictable routines",
+        "Clear expectations",
+        "Being valued for specialized competence"
+      ],
+      "decision_making": "Deliberate and methodicalâ€”needs time. Prefers proven approaches. Conservative. Requires clear information before deciding. Seeks consensus. Avoids decisions creating conflict.",
       "conflict_style": "Avoids at almost all costs. Diffuses through calm, empathetic approaches. Values stability above resolution. May not speak up when offended. Lets things settle rather than engaging. May yield to end conflict, then hold resentment.",
       "team_value": "Consistency and reliability"
     },
-
     "Agent": {
       "family": "Steadiness",
       "pattern": "S/I",
       "disc_combination": "S high (primary); I moderate-high (secondary); D and C low",
-      "alternative_names": ["Si style", "Supporter-Influencer", "Warm Supporter"],
-      "description": "Agents are easygoing, relaxed, and go with the flow. Like the Counselor (I/S—their mirror image), they strive to maintain harmony and treat people with respect. A key distinction is that Agents tend to think of others first, then themselves. Their S (supportive) style is naturally empathetic, while the I (Influence) style adds enthusiasm. Agents exude a kind and generous spirit. They love team settings and appreciate environments ensuring stability and fostering long-term relationships with minimal change. Because they respond to others' needs, people do not fear being rejected by Agents.",
+      "alternative_names": [
+        "Si style",
+        "Supporter-Influencer",
+        "Warm Supporter"
+      ],
+      "description": "Agents are easygoing, relaxed, and go with the flow. Like the Counselor (I/Sâ€”their mirror image), they strive to maintain harmony and treat people with respect. A key distinction is that Agents tend to think of others first, then themselves. Their S (supportive) style is naturally empathetic, while the I (Influence) style adds enthusiasm. Agents exude a kind and generous spirit. They love team settings and appreciate environments ensuring stability and fostering long-term relationships with minimal change. Because they respond to others' needs, people do not fear being rejected by Agents.",
       "core_strengths": [
         "Empathetic, supportive, excellent listeners",
         "Create harmony and promote teamwork",
@@ -700,20 +587,33 @@
       "communication_style": "Quiet, tactful, friendly, casual. Accept affection readily, reject aggression. Communicate with warmth and empathy. Use persuasion through information or key friendships. Prefer inclusive, respectful dialogue. Listen more than speak. Non-confrontational with indirect approaches.",
       "work_environment": "Team-based with stability and long-term relationships; minimal change and conflict; cooperative, supportive atmosphere; roles focused on service and helping; clear procedures; opportunities for meaningful connections",
       "leadership_style": "Leads through service and harmony-creation. Influences through empathy and friendship. Focuses on team cohesion and inclusion. Mediates conflicts. May struggle with tough, unpopular decisions. Supportive but may lack directness in accountability.",
-      "stress_triggers": ["Conflict and dissension", "Aggressive individuals", "Forced confrontation", "Constant change", "Feeling excluded"],
+      "stress_triggers": [
+        "Conflict and dissension",
+        "Aggressive individuals",
+        "Forced confrontation",
+        "Constant change",
+        "Feeling excluded"
+      ],
       "stress_behaviors": "Becomes persuasive using information or friendships; retreats to low profile; enables rather than confronts",
-      "motivation_drivers": ["Group acceptance and belonging", "Harmonious relationships", "Being valued for service and empathy", "Stability and long-term connections", "Helping others succeed"],
+      "motivation_drivers": [
+        "Group acceptance and belonging",
+        "Harmonious relationships",
+        "Being valued for service and empathy",
+        "Stability and long-term connections",
+        "Helping others succeed"
+      ],
       "decision_making": "Considers impact on relationships and group harmony first. Prefers consensus. Takes time for all perspectives. May defer to others to avoid conflict. Uses emotional intelligence. Can be influenced by key friendships.",
       "conflict_style": "Strongly avoids direct confrontation but willing to mediate between others. Uses empathy and gentle persuasion. May enable problems by not addressing directly. Adopts 'low profile' with aggressive individuals. Under pressure, uses key friendships as leverage.",
       "team_value": "Mediation and support"
     },
-
     "Achiever": {
       "family": "Steadiness",
       "pattern": "S/D",
       "disc_combination": "S high (primary); D moderate-high (secondary); I and C low",
-      "alternative_names": ["SD or DS style"],
-      "description": "Achievers have a strong sense of personal accountability and are confident of their work accomplishments. They may be reluctant to delegate when stressed. They thrive with a strong sense of direction and are continually pursuing new accomplishments. The dual S/D style makes it difficult to predict their reactions—sometimes in D mode (direct, results-oriented), other times in S mode (caring, accommodating). They express fierce loyalty to people in their lives. While their D nature focuses on results, their S nature cares about fairness and respect. This makes them natural champions of equality and justice.",
+      "alternative_names": [
+        "SD or DS style"
+      ],
+      "description": "Achievers have a strong sense of personal accountability and are confident of their work accomplishments. They may be reluctant to delegate when stressed. They thrive with a strong sense of direction and are continually pursuing new accomplishments. The dual S/D style makes it difficult to predict their reactionsâ€”sometimes in D mode (direct, results-oriented), other times in S mode (caring, accommodating). They express fierce loyalty to people in their lives. While their D nature focuses on results, their S nature cares about fairness and respect. This makes them natural champions of equality and justice.",
       "core_strengths": [
         "Strong personal accountability",
         "Combines patience (S) with drive (D) for unwavering determination",
@@ -739,20 +639,35 @@
       "communication_style": "In D mode: direct, assertive, results-focused. In S mode: patient, empathetic, accommodating. Style can shift unpredictably. Values clear, results-oriented discussion balanced with fairness. More willing to speak up than other S-types, especially for causes they believe in.",
       "work_environment": "Strong direction and control over work; opportunities for personal accomplishment; recognition equal to contribution; clear task priorities; ability to work independently; part of high-performing teams with competent colleagues; environments valuing both results and fairness",
       "leadership_style": "Leads by personal example and accountability. Champions equality and justice. Can be directive (D) or supportive (S) depending on situation. Expects high standards. Reluctant to delegate. Strong personal responsibility for outcomes. May struggle fully empowering others.",
-      "stress_triggers": ["Competing or inferior work standards", "Inability to control work direction", "Forced delegation to untrusted people", "Lack of recognition", "Compromised quality"],
+      "stress_triggers": [
+        "Competing or inferior work standards",
+        "Inability to control work direction",
+        "Forced delegation to untrusted people",
+        "Lack of recognition",
+        "Compromised quality"
+      ],
       "stress_behaviors": "Frustrated and impatient; becomes more of a 'doer' and less of a 'delegator'; takes on more work personally; shows D-mode behavior more prominently",
-      "motivation_drivers": ["Personal accomplishments", "Internal goals and deeply felt ambitions", "Recognition equal to contribution", "Control over work direction", "Fighting for fairness and justice", "High-performing, competent teams"],
+      "motivation_drivers": [
+        "Personal accomplishments",
+        "Internal goals and deeply felt ambitions",
+        "Recognition equal to contribution",
+        "Control over work direction",
+        "Fighting for fairness and justice",
+        "High-performing, competent teams"
+      ],
       "decision_making": "Internally motivated based on personal goals. Blends methodical S with decisive D. Quick to take personal accountability. May default to 'I'll do it myself.' 'Either/or' thinking can limit alternatives.",
       "conflict_style": "More willing to engage than other S-types due to D influence. Speaks up assertively for fairness and justice. Champions the underdog. May oscillate between D-mode (confrontational) and S-mode (accommodating). Unpredictable responses due to dual-nature tension.",
       "team_value": "Personal accountability and justice"
     },
-
     "Investigator": {
       "family": "Steadiness",
       "pattern": "S/D/C",
       "disc_combination": "S high (primary); D and C both above midline (secondary); I is the only dimension below midline",
-      "alternative_names": ["SDC pattern", "Analytical Achiever"],
-      "description": "Investigators are objective, analytical, and dispassionate 'anchors of reality.' Generally undemonstrative, they calmly and steadily pursue an independent path toward a fixed goal. They are successful at many things not because of versatility but due to dogged determination to follow through. Once a project begins, Investigators fight tenaciously to achieve objectives. Intervention is sometimes necessary to change their direction—they can be perceived as stubborn and opinionated. They thrive on challenging technical assignments where they can use logic instead of emotion. They are not especially interested in pleasing people and prefer to work alone.",
+      "alternative_names": [
+        "SDC pattern",
+        "Analytical Achiever"
+      ],
+      "description": "Investigators are objective, analytical, and dispassionate 'anchors of reality.' Generally undemonstrative, they calmly and steadily pursue an independent path toward a fixed goal. They are successful at many things not because of versatility but due to dogged determination to follow through. Once a project begins, Investigators fight tenaciously to achieve objectives. Intervention is sometimes necessary to change their directionâ€”they can be perceived as stubborn and opinionated. They thrive on challenging technical assignments where they can use logic instead of emotion. They are not especially interested in pleasing people and prefer to work alone.",
       "core_strengths": [
         "Dogged determination and tenacity",
         "Comprehensive task completion with detail attention",
@@ -768,7 +683,7 @@
         "Bluntness and suspicion/lack of trust",
         "Perceived as cold, blunt, tactless",
         "Not interested in pleasing people",
-        "Stubborn—intervention needed to change direction",
+        "Stubbornâ€”intervention needed to change direction",
         "Holds grudges",
         "Too distant and uninvolved",
         "Overly self-critical",
@@ -777,21 +692,38 @@
       ],
       "communication_style": "Persistent, analytical, cautious, disciplined. Responds to logic rather than emotion. Prefers factual, data-driven discussions. Direct and sometimes blunt. Influences through personal tenacity rather than charm. May be terse or distant. Values factual, reliable information.",
       "work_environment": "Challenging technical assignments; opportunities for data and logical analysis; ability to work alone or in small groups; clear goals for developing plans; formal roles with position authority; environments valuing quality and thoroughness; freedom from extensive social demands",
-      "leadership_style": "Leads through determination and personal example. Authority from formal roles and titles. Task-focused—drives toward fixed goals. Not a 'people person' leader. Effective with technical teams. Expects factual, logical thinking. Can be perceived as stubborn and controlling.",
-      "stress_triggers": ["Criticism in front of peers", "Excessive social involvement", "Selling abstract ideas", "Large group involvement", "Emotional environments", "Challenges to carefully developed plans"],
+      "leadership_style": "Leads through determination and personal example. Authority from formal roles and titles. Task-focusedâ€”drives toward fixed goals. Not a 'people person' leader. Effective with technical teams. Expects factual, logical thinking. Can be perceived as stubborn and controlling.",
+      "stress_triggers": [
+        "Criticism in front of peers",
+        "Excessive social involvement",
+        "Selling abstract ideas",
+        "Large group involvement",
+        "Emotional environments",
+        "Challenges to carefully developed plans"
+      ],
       "stress_behaviors": "Internalizes conflict; holds grudges; becomes more distant and blunt; more suspicious of others; retreats into solo work",
-      "motivation_drivers": ["Power through formal roles and position authority", "Accomplishing things well", "Challenging technical assignments", "Clear goals with organized plans", "Determined task focus being valued", "Working with factual, reliable data"],
-      "decision_making": "Highly analytical—uses data and facts to interpret information. Develops orderly plans. Once direction is set, pursues with single-minded determination. May be slow to change course even when evidence suggests adjustment. Evaluates others by use of factual information. Responds to logic over emotion.",
-      "conflict_style": "Internalizes rather than expressing openly. Holds grudges. Uses logic and facts when engaging. May become blunt and direct (D influence) when pushed. Doesn't seek people-pleasing resolution—wants the 'correct' outcome. Prefers avoiding emotional confrontation. Distrustful of others' motives. If conflict persists, withdraws to work independently.",
+      "motivation_drivers": [
+        "Power through formal roles and position authority",
+        "Accomplishing things well",
+        "Challenging technical assignments",
+        "Clear goals with organized plans",
+        "Determined task focus being valued",
+        "Working with factual, reliable data"
+      ],
+      "decision_making": "Highly analyticalâ€”uses data and facts to interpret information. Develops orderly plans. Once direction is set, pursues with single-minded determination. May be slow to change course even when evidence suggests adjustment. Evaluates others by use of factual information. Responds to logic over emotion.",
+      "conflict_style": "Internalizes rather than expressing openly. Holds grudges. Uses logic and facts when engaging. May become blunt and direct (D influence) when pushed. Doesn't seek people-pleasing resolutionâ€”wants the 'correct' outcome. Prefers avoiding emotional confrontation. Distrustful of others' motives. If conflict persists, withdraws to work independently.",
       "team_value": "Dogged determination on technical work"
     },
-
     "Objective_Thinker": {
       "family": "Conscientiousness",
       "pattern": "Pure C",
       "disc_combination": "C high (only dimension above midline); D, I, S all low",
-      "alternative_names": ["Pure C", "Analyst", "Evaluator"],
-      "description": "Objective Thinkers have highly developed critical thinking abilities. They emphasize the importance of facts when drawing conclusions and planning actions, seeking correctness and accuracy in everything. They continually question ideas and processes to ensure things are done properly. They are systematic, practical, and efficient. To manage work effectively, they often combine intuitive information with gathered facts. When in doubt, they avoid public failure by preparing meticulously—mastering new skills privately before using them in group settings. Despite being mild-mannered, they have a strong need to control their environment, exerting this control indirectly by requiring adherence to rules and standards.",
+      "alternative_names": [
+        "Pure C",
+        "Analyst",
+        "Evaluator"
+      ],
+      "description": "Objective Thinkers have highly developed critical thinking abilities. They emphasize the importance of facts when drawing conclusions and planning actions, seeking correctness and accuracy in everything. They continually question ideas and processes to ensure things are done properly. They are systematic, practical, and efficient. To manage work effectively, they often combine intuitive information with gathered facts. When in doubt, they avoid public failure by preparing meticulouslyâ€”mastering new skills privately before using them in group settings. Despite being mild-mannered, they have a strong need to control their environment, exerting this control indirectly by requiring adherence to rules and standards.",
       "core_strengths": [
         "Highly developed critical and analytical thinking",
         "Systematic, practical, efficient",
@@ -814,23 +746,40 @@
         "Avoids aggression to a fault",
         "Controls indirectly through rules"
       ],
-      "communication_style": "Indirect and guarded—cautious and reflective. Prefers fact-based, logical exchanges. Reticent about personal feelings. Measures words carefully. Prefers written or well-prepared presentations. Avoids emotional language. Dislikes pressure for immediate responses.",
+      "communication_style": "Indirect and guardedâ€”cautious and reflective. Prefers fact-based, logical exchanges. Reticent about personal feelings. Measures words carefully. Prefers written or well-prepared presentations. Avoids emotional language. Dislikes pressure for immediate responses.",
       "work_environment": "Reserved, business-like atmosphere; clearly defined expectations; quality and accuracy valued; opportunities to demonstrate expertise; control over performance factors; opportunity to ask 'why' questions; peaceful, aggression-free; independent work with minimal interruptions",
       "leadership_style": "Leads through expertise and standards. Exerts control indirectly through rules and procedures. Values quality and competency above all. Ensures accuracy and avoids costly mistakes. May slow decision-making. Leads by example and mastery rather than charisma. May struggle providing emotional support.",
-      "stress_triggers": ["Irrational behavior", "Ridicule or public criticism", "Ambiguity", "Aggressive interactions", "Rushed deadlines", "Decisions without sufficient data"],
+      "stress_triggers": [
+        "Irrational behavior",
+        "Ridicule or public criticism",
+        "Ambiguity",
+        "Aggressive interactions",
+        "Rushed deadlines",
+        "Decisions without sufficient data"
+      ],
       "stress_behaviors": "Worrisome and anxious; immerses in more analysis; withdraws socially; becomes rigid about rules; avoids acknowledging mistakes",
-      "motivation_drivers": ["Precision, accuracy, logical correctness", "Demonstrating expertise", "Recognition for specific skills", "Control over environment and quality", "Freedom to investigate", "Clearly defined expectations", "Peaceful, structured settings"],
+      "motivation_drivers": [
+        "Precision, accuracy, logical correctness",
+        "Demonstrating expertise",
+        "Recognition for specific skills",
+        "Control over environment and quality",
+        "Freedom to investigate",
+        "Clearly defined expectations",
+        "Peaceful, structured settings"
+      ],
       "decision_making": "Highly analytical and data-driven. Bases decisions on logical analysis of quantifiable information. Avoids emotional influence. Concerned with finding the 'right' answer. Struggles with ambiguity. Gets bogged down when uncertain. Prepares meticulously.",
       "conflict_style": "Strongly avoids interpersonal aggression. Uses subtle, indirect approaches. Controls through rules rather than confrontation. Withdraws rather than engaging directly. Uses facts and data to resolve disagreements. Uncomfortable with aggressive people. May search for supporting data rather than admitting error.",
       "team_value": "Quality control and analysis"
     },
-
     "Perfectionist": {
       "family": "Conscientiousness",
       "pattern": "C/S",
       "disc_combination": "C high (primary); S moderate-high (secondary); D and I low",
-      "alternative_names": ["CS style", "The Analyst"],
-      "description": "'If it can't be done right, then why do it at all'—the Perfectionist's mantra. C/S styles are driven by a need for accuracy and logic. The C provides precision while the S adds patience, resulting in an individual with intense quality focus. They are systematic, precise thinkers who follow procedures in both personal and professional life. Extremely conscientious, they are diligent with work requiring detail and accuracy. Because they desire stable conditions and predictable activities, they are most comfortable in clearly defined work environments with specifics on expectations, time requirements, and evaluation procedures.",
+      "alternative_names": [
+        "CS style",
+        "The Analyst"
+      ],
+      "description": "'If it can't be done right, then why do it at all'â€”the Perfectionist's mantra. C/S styles are driven by a need for accuracy and logic. The C provides precision while the S adds patience, resulting in an individual with intense quality focus. They are systematic, precise thinkers who follow procedures in both personal and professional life. Extremely conscientious, they are diligent with work requiring detail and accuracy. Because they desire stable conditions and predictable activities, they are most comfortable in clearly defined work environments with specifics on expectations, time requirements, and evaluation procedures.",
       "core_strengths": [
         "Exceptional quality control and standard maintenance",
         "Systematic, precise thinking",
@@ -850,28 +799,47 @@
         "Resistant to change and innovation",
         "Perfectionist nature causes stress and anxiety",
         "May be late delivering due to unrealistic standards",
-        "Controlling—finds something wrong in others' work",
+        "Controllingâ€”finds something wrong in others' work",
         "Suspicious of compliments",
         "Needs more role flexibility and self-worth belief",
         "Risk-averse"
       ],
       "communication_style": "Reserved, deliberate, measured. Displays competence and restraint. Non-demonstrative. Prefers logical, fact-based discussions. More warm than pure C due to S influence but still guarded. May internalize concerns. Prefers written or structured formats. Their silence doesn't mean everything is fine.",
       "work_environment": "Clearly defined expectations with specific time requirements and evaluation procedures; stable, predictable conditions; quality-focused atmosphere; established procedures; structured roles; behind-the-scenes rather than spotlight; minimal conflict and antagonism; stability with minimal chaos",
-      "leadership_style": "Servant leader mindset—fair-minded and appreciative of different strengths. Humble. Prioritizes reliability and quality. Aims to lessen uncertainty for team. Enjoys supporting people to do their best work. Patient and methodical. Creates stable, quality-focused environments. May struggle with rapid change and conflict management.",
-      "stress_triggers": ["Hostile or antagonistic environments", "Unpredictable situations", "Criticism of work", "Chaos", "Loss of security", "Conflict", "Rapid change", "Ambiguous expectations"],
+      "leadership_style": "Servant leader mindsetâ€”fair-minded and appreciative of different strengths. Humble. Prioritizes reliability and quality. Aims to lessen uncertainty for team. Enjoys supporting people to do their best work. Patient and methodical. Creates stable, quality-focused environments. May struggle with rapid change and conflict management.",
+      "stress_triggers": [
+        "Hostile or antagonistic environments",
+        "Unpredictable situations",
+        "Criticism of work",
+        "Chaos",
+        "Loss of security",
+        "Conflict",
+        "Rapid change",
+        "Ambiguous expectations"
+      ],
       "stress_behaviors": "Becomes tactful and diplomatic (withdraws into safety); resorts to familiar procedures; becomes inflexible; appeals to conventional methods; resists change; may freeze or become passive; passive-aggressive tactics possible",
-      "motivation_drivers": ["Predictable and stable outcomes", "Quality results through established methods", "Maintaining high standards", "Appreciation for thoroughness", "Clear expectations and structured evaluation", "Secure, stable environments", "Adequate time to plan and verify"],
+      "motivation_drivers": [
+        "Predictable and stable outcomes",
+        "Quality results through established methods",
+        "Maintaining high standards",
+        "Appreciation for thoroughness",
+        "Clear expectations and structured evaluation",
+        "Secure, stable environments",
+        "Adequate time to plan and verify"
+      ],
       "decision_making": "Methodical and thorough. Gathers extensive information. Questions assumptions and analyzes alternatives. May be criticized for time taken. Requires extensive data. Likes managers' opinions but takes risks when armed with facts. Prefers proven methods. Risk-averse unless supported by strong evidence.",
-      "conflict_style": "Naturally conflict-averse—values stability. Prefers staying objective and returning to stable footing. Uses tact and diplomacy under pressure. Fears antagonism deeply. May become passive or use passive-aggressive tactics. Tends to let issues simmer. Productive: focuses on facts, listens, gives space. Growth area: engaging directly.",
+      "conflict_style": "Naturally conflict-averseâ€”values stability. Prefers staying objective and returning to stable footing. Uses tact and diplomacy under pressure. Fears antagonism deeply. May become passive or use passive-aggressive tactics. Tends to let issues simmer. Productive: focuses on facts, listens, gives space. Growth area: engaging directly.",
       "team_value": "Quality control and standards"
     },
-
     "Practitioner": {
       "family": "Conscientiousness",
       "pattern": "C/I/S",
       "disc_combination": "C high (primary); I and S both above midline (secondary); D is the only dimension below midline",
-      "alternative_names": ["CIS pattern", "Curious, Social, Cooperative"],
-      "description": "Practitioners value proficiency in specialized areas. Spurred by a desire to be 'good at something,' they carefully monitor their own work performance. Although their aim is to be 'the' expert in an area, they frequently give the impression of knowing something about everything—an image strengthened when they verbalize knowledge on many subjects. As they interact, they project a relaxed, diplomatic, and easygoing style (I and S influence). This congenial attitude may change quickly in their own work area when they become intensely focused on meeting high performance standards. They are uniquely skilled in both technical and people problem-solving—the only C-family pattern combining analytical precision with social awareness and patience.",
+      "alternative_names": [
+        "CIS pattern",
+        "Curious, Social, Cooperative"
+      ],
+      "description": "Practitioners value proficiency in specialized areas. Spurred by a desire to be 'good at something,' they carefully monitor their own work performance. Although their aim is to be 'the' expert in an area, they frequently give the impression of knowing something about everythingâ€”an image strengthened when they verbalize knowledge on many subjects. As they interact, they project a relaxed, diplomatic, and easygoing style (I and S influence). This congenial attitude may change quickly in their own work area when they become intensely focused on meeting high performance standards. They are uniquely skilled in both technical and people problem-solvingâ€”the only C-family pattern combining analytical precision with social awareness and patience.",
       "core_strengths": [
         "Skilled in both technical and people problem-solving",
         "Displays proficiency and specialization",
@@ -898,30 +866,30 @@
       ],
       "communication_style": "Relaxed, diplomatic, easygoing in social interactions (most sociable of C-family). Pleasant, courteous, restrained. Verbalizes knowledge confidently on many subjects. Shifts from congenial to intensely focused within work domain. Diplomatic and tactful with indirect approaches. More warm and accepting than Objective Thinker or Perfectionist. Will verbalize disappointment when standards aren't met.",
       "work_environment": "Comfortable and cooperative atmosphere; trusting, pleasant people; detail-oriented projects; opportunities for specialized expertise; recognition as expert; supportive (not leadership) roles; structured with clear procedures; team-oriented; environments valuing self-discipline and quality; stability mixed with enough variety to avoid predictability",
-      "leadership_style": "Prefers NOT to lead—favors supportive, collaborative roles. When leading, acts as subject-matter expert and mentor. Influences through skill demonstration and proper procedures. Sets high expectations and monitors performance. More people-aware than other C-family leaders. Needs to delegate rather than handling everything personally. Should take more risks.",
-      "stress_triggers": ["Risk-taking situations", "Being seen as too predictable or ordinary", "Not being recognized as expert", "Criticism (especially public)", "Forced leadership or major decision-making", "Undisciplined colleagues", "Chaos"],
+      "leadership_style": "Prefers NOT to leadâ€”favors supportive, collaborative roles. When leading, acts as subject-matter expert and mentor. Influences through skill demonstration and proper procedures. Sets high expectations and monitors performance. More people-aware than other C-family leaders. Needs to delegate rather than handling everything personally. Should take more risks.",
+      "stress_triggers": [
+        "Risk-taking situations",
+        "Being seen as too predictable or ordinary",
+        "Not being recognized as expert",
+        "Criticism (especially public)",
+        "Forced leadership or major decision-making",
+        "Undisciplined colleagues",
+        "Chaos"
+      ],
       "stress_behaviors": "Becomes restrained and withdrawn; overly sensitive to criticism; voices disapproval more sharply; puts personal objectives first; retreats to area of expertise; becomes rigid about procedures",
-      "motivation_drivers": ["Personal growth and skill development", "Becoming recognized as 'the expert'", "Supporting and interacting with others on meaningful projects", "Mastering new skills", "Advancing in position and knowledge", "Contributing to team success", "Being valued for proficiency", "Cooperative, pleasant environment"],
+      "motivation_drivers": [
+        "Personal growth and skill development",
+        "Becoming recognized as 'the expert'",
+        "Supporting and interacting with others on meaningful projects",
+        "Mastering new skills",
+        "Advancing in position and knowledge",
+        "Contributing to team success",
+        "Being valued for proficiency",
+        "Cooperative, pleasant environment"
+      ],
       "decision_making": "Prefers not to make major decisions or take risks. Needs ample time to think. Brings valuable insights when given time. Bases decisions on expertise and procedures. More cautious than fast. Comfortable within area of expertise. Combines analytical thinking with people-impact consideration (I and S).",
-      "conflict_style": "Diplomatic and accommodating—prefers harmony (S and I influence). Values cooperative environments. Verbalizes disapproval when expectations unmet (may seem passive-aggressive). Becomes restrained and sensitive under pressure. Resolves through proper procedures. More comfortable addressing indirectly. Uses social skills (I) to smooth over. Patient enough (S) to wait for resolution. May withdraw rather than escalate.",
+      "conflict_style": "Diplomatic and accommodatingâ€”prefers harmony (S and I influence). Values cooperative environments. Verbalizes disapproval when expectations unmet (may seem passive-aggressive). Becomes restrained and sensitive under pressure. Resolves through proper procedures. More comfortable addressing indirectly. Uses social skills (I) to smooth over. Patient enough (S) to wait for resolution. May withdraw rather than escalate.",
       "team_value": "Specialized expertise with people skills"
     }
-  },
-
-  "pattern_determination": {
-    "algorithm": "Count dimensions above midline threshold. For 1 dimension: assign pure style. For 2 dimensions: identify primary/secondary and map to pattern. For D/I combination: calculate gap—small gap = Inspirational, large gap = Results-Oriented. For 3 dimensions: S+D+C = Investigator, C+I+S = Practitioner.",
-    "midline_threshold": 16,
-    "threshold_percentage": 0.65,
-    "scoring_notes": "Each dimension ranges 0-24. Scores above 16 (65% of maximum) indicate high expression. Primary = highest score, Secondary = second-highest."
-  },
-
-  "differentiation_guide": {
-    "Developer_vs_Results_Oriented": "Results-Oriented uses I secondary as social leverage for results. Developer is more purely self-reliant.",
-    "Results_Oriented_vs_Inspirational": "Gap between D and I scores. D clearly dominates = Results-Oriented. D and I nearly equal = Inspirational.",
-    "Promoter_vs_Persuader": "Persuader adds D-driven purpose. Promoters socialize for connection; Persuaders socialize with ambition.",
-    "Counselor_vs_Agent": "Mirror patterns. Counselor (I/S) more socially proactive. Agent (S/I) more grounded, thinks of others first.",
-    "Achiever_vs_Investigator": "Investigator adds C (analytical). Achiever driven by personal accountability; Investigator by technical mastery.",
-    "Objective_Thinker_vs_Perfectionist": "Perfectionist adds S (patience, stability). Objective Thinker explores novel approaches; Perfectionist clings to procedures.",
-    "Perfectionist_vs_Practitioner": "Practitioner adds I (social awareness). Perfectionist works behind scenes; Practitioner most socially comfortable C pattern."
   }
 }

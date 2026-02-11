@@ -258,9 +258,15 @@
 ### External Dependencies
 - Claude API key (Anthropic) - REQUIRED for Sprint 2
 - /disc-data directory with:
-  - disc_complete.json (assessment questions)
-  - disc_example_analyses_enhanced.json (RAG examples)
-  - Theory markdown files (~1.1MB)
+  - disc_assessment.json (24-question assessment instrument)
+  - disc_ai_analysis_framework.json (RAG framework & examples)
+  - disc_profiles.json (15 pattern behavioral profiles)
+  - disc_team_dynamics.json (team interaction framework)
+  - disc_career_guidance.json (career alignment data)
+  - disc_compatibility.json (relationship dynamics)
+  - disc_communication.json (communication strategies)
+  - DISC_REFERENCE.md (comprehensive reference guide)
+  - README.md (data package documentation)
 - Node.js 18+ (development environment)
 - Design reference (Stripe website for aesthetic)
 
@@ -313,9 +319,15 @@
 - PROJECT_STATUS.md - This file (current status)
 
 ### Data Sources (/disc-data)
-- disc_complete.json - 24 assessment questions
-- disc_example_analyses_enhanced.json - RAG example analyses
-- [Theory markdown files] - ~1.1MB DISC theory for RAG
+- disc_assessment.json - 24 assessment questions
+- disc_ai_analysis_framework.json - RAG framework & analyses
+- disc_profiles.json - 15 pattern behavioral profiles
+- disc_team_dynamics.json - Team interaction framework
+- disc_career_guidance.json - Career alignment data
+- disc_compatibility.json - Relationship dynamics
+- disc_communication.json - Communication strategies
+- DISC_REFERENCE.md - Comprehensive reference guide
+- README.md - Data package documentation
 
 ### Project Root (to be created in Sprint 1)
 - package.json

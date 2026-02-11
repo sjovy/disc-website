@@ -1,0 +1,407 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "source": "Classical DISC Career Fit Research",
+    "description": "Career function alignments and entrepreneurship suitability by pattern"
+  },
+  "business_function_fit": {
+    "rating_scale": {
+      "5": "Exceptional fit - natural strengths align perfectly",
+      "4": "Strong fit - significant natural advantages",
+      "3": "Good fit - capable with some adaptation",
+      "2": "Challenging fit - requires significant adaptation",
+      "1": "Poor fit - fundamental mismatch with core behaviors"
+    },
+    "patterns": {
+      "Developer": {
+        "Sales": 3,
+        "Marketing": 2,
+        "Engineering": 2,
+        "HR": 1,
+        "Finance": 2,
+        "Operations": 5
+      },
+      "Results-Oriented": {
+        "Sales": 5,
+        "Marketing": 3,
+        "Engineering": 1,
+        "HR": 1,
+        "Finance": 3,
+        "Operations": 3
+      },
+      "Inspirational": {
+        "Sales": 4,
+        "Marketing": 5,
+        "Engineering": 1,
+        "HR": 2,
+        "Finance": 1,
+        "Operations": 3
+      },
+      "Creative": {
+        "Sales": 2,
+        "Marketing": 3,
+        "Engineering": 5,
+        "HR": 1,
+        "Finance": 3,
+        "Operations": 3
+      },
+      "Promoter": {
+        "Sales": 3,
+        "Marketing": 5,
+        "Engineering": 1,
+        "HR": 3,
+        "Finance": 1,
+        "Operations": 1
+      },
+      "Persuader": {
+        "Sales": 5,
+        "Marketing": 4,
+        "Engineering": 1,
+        "HR": 2,
+        "Finance": 1,
+        "Operations": 2
+      },
+      "Counselor": {
+        "Sales": 2,
+        "Marketing": 3,
+        "Engineering": 1,
+        "HR": 5,
+        "Finance": 1,
+        "Operations": 2
+      },
+      "Appraiser": {
+        "Sales": 3,
+        "Marketing": 4,
+        "Engineering": 2,
+        "HR": 3,
+        "Finance": 2,
+        "Operations": 3
+      },
+      "Specialist": {
+        "Sales": 1,
+        "Marketing": 1,
+        "Engineering": 2,
+        "HR": 4,
+        "Finance": 3,
+        "Operations": 3
+      },
+      "Agent": {
+        "Sales": 2,
+        "Marketing": 2,
+        "Engineering": 1,
+        "HR": 5,
+        "Finance": 1,
+        "Operations": 2
+      },
+      "Achiever": {
+        "Sales": 2,
+        "Marketing": 1,
+        "Engineering": 3,
+        "HR": 3,
+        "Finance": 3,
+        "Operations": 5
+      },
+      "Investigator": {
+        "Sales": 1,
+        "Marketing": 1,
+        "Engineering": 5,
+        "HR": 1,
+        "Finance": 4,
+        "Operations": 3
+      },
+      "Objective Thinker": {
+        "Sales": 1,
+        "Marketing": 1,
+        "Engineering": 5,
+        "HR": 1,
+        "Finance": 5,
+        "Operations": 3
+      },
+      "Perfectionist": {
+        "Sales": 1,
+        "Marketing": 1,
+        "Engineering": 4,
+        "HR": 2,
+        "Finance": 4,
+        "Operations": 4
+      },
+      "Practitioner": {
+        "Sales": 2,
+        "Marketing": 3,
+        "Engineering": 3,
+        "HR": 3,
+        "Finance": 2,
+        "Operations": 3
+      }
+    }
+  },
+  "entrepreneurship_suitability": {
+    "rating_scale": {
+      "5": "Natural-born entrepreneur - highest success probability",
+      "4": "Strong entrepreneurial potential with right co-founder",
+      "3": "Viable with significant support systems",
+      "2": "Better as employee or in stable small business",
+      "1": "Fundamental mismatch with entrepreneurial demands"
+    },
+    "rankings": [
+      {
+        "rank": 1,
+        "pattern": "Developer",
+        "rating": 5.0,
+        "rationale": "Natural-born founder; self-reliant, thrives on challenge, comfortable with risk"
+      },
+      {
+        "rank": 2,
+        "pattern": "Results-Oriented",
+        "rating": 5.0,
+        "rationale": "Drive + charisma to recruit teams and sell vision"
+      },
+      {
+        "rank": 3,
+        "pattern": "Inspirational",
+        "rating": 4.5,
+        "rationale": "Classic CEO profile; sells vision AND executes with balanced D/I"
+      },
+      {
+        "rank": 4,
+        "pattern": "Creative",
+        "rating": 4.0,
+        "rationale": "Technical founder archetype; innovates but may struggle with team-building"
+      },
+      {
+        "rank": 5,
+        "pattern": "Persuader",
+        "rating": 4.0,
+        "rationale": "Can sell anything; needs detail-oriented co-founder for execution"
+      },
+      {
+        "rank": 6,
+        "pattern": "Achiever",
+        "rating": 3.5,
+        "rationale": "Strong accountability; better as co-founder/COO than solo founder"
+      },
+      {
+        "rank": 7,
+        "pattern": "Appraiser",
+        "rating": 3.0,
+        "rationale": "Can found consulting/service businesses; needs structure for scale"
+      },
+      {
+        "rank": 8,
+        "pattern": "Promoter",
+        "rating": 3.0,
+        "rationale": "Great at networking/fundraising; needs operational partner urgently"
+      },
+      {
+        "rank": 9,
+        "pattern": "Investigator",
+        "rating": 2.5,
+        "rationale": "Deep-tech startups possible; struggles with sales side"
+      },
+      {
+        "rank": 10,
+        "pattern": "Counselor",
+        "rating": 2.5,
+        "rationale": "Coaching/therapy practices work; not suited for high-growth startups"
+      },
+      {
+        "rank": 11,
+        "pattern": "Objective Thinker",
+        "rating": 2.0,
+        "rationale": "Strong technical contributor if paired with D/I co-founder"
+      },
+      {
+        "rank": 12,
+        "pattern": "Practitioner",
+        "rating": 2.0,
+        "rationale": "Prefers supportive roles; uncomfortable with founder pressure"
+      },
+      {
+        "rank": 13,
+        "pattern": "Agent",
+        "rating": 1.5,
+        "rationale": "Too conflict-averse for startup volatility and tough decisions"
+      },
+      {
+        "rank": 14,
+        "pattern": "Specialist",
+        "rating": 1.0,
+        "rationale": "Prefers stability; startup chaos is antithetical to core needs"
+      },
+      {
+        "rank": 15,
+        "pattern": "Perfectionist",
+        "rating": 1.0,
+        "rationale": "Needs predictability; hostile to entrepreneurial risk and ambiguity"
+      }
+    ]
+  },
+  "career_families": {
+    "high_autonomy_roles": {
+      "description": "Roles requiring independence and self-direction",
+      "best_fits": [
+        "Developer",
+        "Results-Oriented",
+        "Creative",
+        "Objective Thinker"
+      ],
+      "challenges_for": [
+        "Specialist",
+        "Agent",
+        "Counselor"
+      ]
+    },
+    "people_management": {
+      "description": "Roles centered on leading and developing teams",
+      "best_fits": [
+        "Inspirational",
+        "Persuader",
+        "Counselor",
+        "Agent"
+      ],
+      "challenges_for": [
+        "Developer",
+        "Objective Thinker",
+        "Perfectionist"
+      ]
+    },
+    "process_execution": {
+      "description": "Roles focused on reliable, consistent delivery",
+      "best_fits": [
+        "Specialist",
+        "Achiever",
+        "Perfectionist",
+        "Investigator"
+      ],
+      "challenges_for": [
+        "Promoter",
+        "Persuader",
+        "Inspirational"
+      ]
+    },
+    "creative_innovation": {
+      "description": "Roles requiring novel thinking and experimentation",
+      "best_fits": [
+        "Developer",
+        "Creative",
+        "Promoter",
+        "Appraiser"
+      ],
+      "challenges_for": [
+        "Specialist",
+        "Perfectionist",
+        "Agent"
+      ]
+    },
+    "analytical_technical": {
+      "description": "Roles demanding precision and systematic thinking",
+      "best_fits": [
+        "Objective Thinker",
+        "Perfectionist",
+        "Creative",
+        "Investigator"
+      ],
+      "challenges_for": [
+        "Promoter",
+        "Counselor",
+        "Agent"
+      ]
+    },
+    "customer_facing": {
+      "description": "Roles requiring interpersonal engagement and service",
+      "best_fits": [
+        "Counselor",
+        "Agent",
+        "Persuader",
+        "Promoter"
+      ],
+      "challenges_for": [
+        "Developer",
+        "Objective Thinker",
+        "Creative"
+      ]
+    }
+  },
+  "career_development_paths": {
+    "D_family_progression": {
+      "early_career": "Individual contributor roles with autonomy and challenge",
+      "mid_career": "Project leadership, business unit management, entrepreneurship",
+      "senior_career": "Executive leadership, strategic decision-making, transformation",
+      "avoid": "Long-term routine work, heavily collaborative roles without authority"
+    },
+    "I_family_progression": {
+      "early_career": "Customer-facing, team-based, socially engaging roles",
+      "mid_career": "Sales leadership, marketing management, people development",
+      "senior_career": "Chief revenue officer, chief people officer, culture leadership",
+      "avoid": "Isolated technical work, extensive detail work, solo contributor roles"
+    },
+    "S_family_progression": {
+      "early_career": "Specialized roles with clear processes and supportive teams",
+      "mid_career": "Operations management, team leadership, quality assurance",
+      "senior_career": "Chief operating officer, servant leadership, organizational stability",
+      "avoid": "High-pressure sales, constant change environments, startup chaos"
+    },
+    "C_family_progression": {
+      "early_career": "Technical specialist, analyst, quality control roles",
+      "mid_career": "Subject matter expertise, technical leadership, process architecture",
+      "senior_career": "Chief technology officer, chief financial officer, technical fellow",
+      "avoid": "Highly political environments, rapid iteration roles, people-heavy management"
+    }
+  },
+  "industry_alignments": {
+    "Technology_Startups": {
+      "best_patterns": [
+        "Developer",
+        "Creative",
+        "Inspirational",
+        "Results-Oriented"
+      ],
+      "why": "Requires innovation, risk tolerance, rapid execution"
+    },
+    "Healthcare_Services": {
+      "best_patterns": [
+        "Counselor",
+        "Agent",
+        "Specialist",
+        "Perfectionist"
+      ],
+      "why": "Requires empathy, consistency, attention to detail, stability"
+    },
+    "Finance_Banking": {
+      "best_patterns": [
+        "Objective Thinker",
+        "Perfectionist",
+        "Investigator",
+        "Achiever"
+      ],
+      "why": "Requires analytical rigor, risk management, accuracy"
+    },
+    "Sales_Business_Development": {
+      "best_patterns": [
+        "Results-Oriented",
+        "Persuader",
+        "Inspirational",
+        "Promoter"
+      ],
+      "why": "Requires social skills, competitive drive, persuasion"
+    },
+    "Creative_Industries": {
+      "best_patterns": [
+        "Promoter",
+        "Appraiser",
+        "Inspirational",
+        "Creative"
+      ],
+      "why": "Requires innovation, aesthetic judgment, social awareness"
+    },
+    "Operations_Manufacturing": {
+      "best_patterns": [
+        "Achiever",
+        "Perfectionist",
+        "Specialist",
+        "Investigator"
+      ],
+      "why": "Requires consistency, process adherence, quality control"
+    }
+  }
+}

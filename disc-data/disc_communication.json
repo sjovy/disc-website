@@ -1,0 +1,167 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "source": "Classical DISC Communication Research",
+    "description": "Communication strategies and playbooks for cross-pattern interactions"
+  },
+  "communication_signatures": {
+    "D_family": {
+      "Developer": {
+        "style": "Direct, blunt, bottom-line oriented",
+        "preferences": "Brief exchanges, minimal small talk, efficiency above all",
+        "persuasion": "Challenge framing ('This is difficult - can you pull it off?')",
+        "format": "Bullet points, executive summaries"
+      },
+      "Results-Oriented": {
+        "style": "Fast-paced, confident, forceful",
+        "preferences": "Competitive metrics, performance data, visible urgency",
+        "persuasion": "Status-based, measurable outcomes",
+        "format": "Results dashboards, scorecards"
+      },
+      "Inspirational": {
+        "style": "Charismatic, face-to-face, persuasive",
+        "preferences": "Personal interaction, status framing",
+        "persuasion": "Vision-casting, status appeals, social proof",
+        "format": "Presentations, face-to-face meetings"
+      },
+      "Creative": {
+        "style": "Analytical yet direct, conceptual",
+        "preferences": "Written analysis with brief verbal summaries",
+        "persuasion": "Novel approaches backed by data",
+        "format": "Technical documents with executive summary"
+      }
+    },
+    "I_family": {
+      "Promoter": {
+        "style": "Enthusiastic, story-driven, animated",
+        "preferences": "Face-to-face energy, testimonials",
+        "persuasion": "Enthusiasm, social proof",
+        "format": "Visual presentations, verbal storytelling"
+      },
+      "Persuader": {
+        "style": "Fast, persuasive, charming with purpose",
+        "preferences": "Status incentives, freedom, variety",
+        "persuasion": "Status recognition, challenging opportunities",
+        "format": "Dynamic presentations"
+      },
+      "Counselor": {
+        "style": "Warm, empathetic, moderate pace",
+        "preferences": "People-centered topics, relationship building",
+        "persuasion": "Show how it builds relationships",
+        "format": "Personal conversations"
+      },
+      "Appraiser": {
+        "style": "Blends flair with data",
+        "preferences": "Winning strategies that look impressive",
+        "persuasion": "Success with style",
+        "format": "Professional presentations with data"
+      }
+    },
+    "S_family": {
+      "Specialist": {
+        "style": "Slow, deliberate, thorough",
+        "preferences": "One-on-one meetings, advance notice",
+        "persuasion": "Stability, proven track records",
+        "format": "Written details with time to process"
+      },
+      "Agent": {
+        "style": "Quiet, tactful, friendly",
+        "preferences": "Team harmony, inclusion",
+        "persuasion": "Group benefit, harmony",
+        "format": "Inclusive discussions"
+      },
+      "Achiever": {
+        "style": "Variable (D/S modes)",
+        "preferences": "Personal accomplishment, fairness",
+        "persuasion": "Achievement recognition, justice",
+        "format": "Clear deliverables with recognition"
+      },
+      "Investigator": {
+        "style": "Reserved, factual, methodical",
+        "preferences": "Written documentation, logic",
+        "persuasion": "Logic, demonstrated competence",
+        "format": "Technical documents"
+      }
+    },
+    "C_family": {
+      "Objective Thinker": {
+        "style": "Analytical, systematic, reserved",
+        "preferences": "Advance written materials, processing time",
+        "persuasion": "Logical analysis, systematic evidence",
+        "format": "Comprehensive written reports"
+      },
+      "Perfectionist": {
+        "style": "Slowest, most deliberate",
+        "preferences": "Maximum advance notice, no surprises",
+        "persuasion": "Quality control, fail-safe procedures",
+        "format": "Detailed specifications with checklists"
+      },
+      "Practitioner": {
+        "style": "Approachable C-style, moderate pace",
+        "preferences": "Team contribution, expertise recognition",
+        "persuasion": "Expertise development, skill advancement",
+        "format": "Professional documents with personal touch"
+      }
+    }
+  },
+  "cross_quadrant_playbooks": {
+    "D_to_S": {
+      "DO": [
+        "Slow your pace significantly",
+        "Show sincere interest in them as people",
+        "Explain the 'why' behind changes",
+        "Give them time to process",
+        "Provide written follow-up"
+      ],
+      "DONT": [
+        "Force quick responses",
+        "Use aggressive language",
+        "Create surprise situations"
+      ],
+      "key_insight": "D must slow pace; S must practice asserting needs early"
+    },
+    "I_to_C": {
+      "DO": [
+        "Provide written details before discussion",
+        "Give advance notice",
+        "Back up enthusiasm with data",
+        "Allow time for analysis",
+        "Follow through on commitments"
+      ],
+      "DONT": [
+        "Show up with spontaneous ideas",
+        "Push for quick decisions",
+        "Use emotional appeals without logic"
+      ],
+      "key_insight": "I must provide substance; C must verbalize concerns"
+    },
+    "S_to_D": {
+      "DO": [
+        "Communicate bottom line first",
+        "Be direct and confident",
+        "Move faster than comfortable",
+        "State needs clearly and early"
+      ],
+      "DONT": [
+        "Ramble or provide excessive context",
+        "Show hesitation",
+        "Take bluntness personally"
+      ],
+      "key_insight": "S must match D's directness; D must recognize S's courage"
+    },
+    "C_to_I": {
+      "DO": [
+        "Lead with positive energy",
+        "Allow brainstorming without critique",
+        "Offer verbal appreciation",
+        "Frame feedback as building on ideas"
+      ],
+      "DONT": [
+        "Lead with criticism",
+        "Shoot down ideas immediately",
+        "Withhold appreciation"
+      ],
+      "key_insight": "C must express appreciation before critique; I must listen to data"
+    }
+  }
+}

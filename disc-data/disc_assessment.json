@@ -1,0 +1,322 @@
+{
+  "metadata": {
+    "name": "Classical DISC Assessment",
+    "version": "2.0",
+    "source": "John Cleaver Self Description (1956), based on Marston DISC Theory (1928)",
+    "description": "24-item forced-choice assessment for Classical DISC 15-Pattern System",
+    "psychometrics": {
+      "cronbach_alpha": "0.60-0.93",
+      "test_retest_reliability": 0.89,
+      "validation_source": "Geier (1977), University of Minnesota",
+      "pattern_agreement": "90% of respondents agree with their narrative pattern description"
+    },
+    "total_combinations": 2041,
+    "patterns": 15,
+    "languages": ["en"]
+  },
+
+  "assessment_structure": {
+    "format": "forced_choice",
+    "total_questions": 24,
+    "options_per_question": 4,
+    "scoring_range": "0-24 per dimension",
+    "completion_time_minutes": "5-10"
+  },
+
+  "questions": [
+    {
+      "id": 1,
+      "options": {
+        "A": "Restrained",
+        "B": "Forceful",
+        "C": "Careful",
+        "D": "Expressive"
+      }
+    },
+    {
+      "id": 2,
+      "options": {
+        "A": "Pioneering",
+        "B": "Correct",
+        "C": "Exciting",
+        "D": "Satisfied"
+      }
+    },
+    {
+      "id": 3,
+      "options": {
+        "A": "Willing",
+        "B": "Animated",
+        "C": "Bold",
+        "D": "Precise"
+      }
+    },
+    {
+      "id": 4,
+      "options": {
+        "A": "Argumentative",
+        "B": "Doubting",
+        "C": "Indecisive",
+        "D": "Unpredictable"
+      }
+    },
+    {
+      "id": 5,
+      "options": {
+        "A": "Respectful",
+        "B": "Out-going",
+        "C": "Patient",
+        "D": "Daring"
+      }
+    },
+    {
+      "id": 6,
+      "options": {
+        "A": "Persuasive",
+        "B": "Self-reliant",
+        "C": "Logical",
+        "D": "Gentle"
+      }
+    },
+    {
+      "id": 7,
+      "options": {
+        "A": "Cautious",
+        "B": "Even-tempered",
+        "C": "Decisive",
+        "D": "Life-of-the-party"
+      }
+    },
+    {
+      "id": 8,
+      "options": {
+        "A": "Popular",
+        "B": "Assertive",
+        "C": "Perfectionist",
+        "D": "Generous"
+      }
+    },
+    {
+      "id": 9,
+      "options": {
+        "A": "Colorful",
+        "B": "Modest",
+        "C": "Easy-going",
+        "D": "Unyielding"
+      }
+    },
+    {
+      "id": 10,
+      "options": {
+        "A": "Systematic",
+        "B": "Optimistic",
+        "C": "Persistent",
+        "D": "Accommodating"
+      }
+    },
+    {
+      "id": 11,
+      "options": {
+        "A": "Relentless",
+        "B": "Humble",
+        "C": "Neighborly",
+        "D": "Talkative"
+      }
+    },
+    {
+      "id": 12,
+      "options": {
+        "A": "Friendly",
+        "B": "Observant",
+        "C": "Playful",
+        "D": "Strong-willed"
+      }
+    },
+    {
+      "id": 13,
+      "options": {
+        "A": "Charming",
+        "B": "Adventurous",
+        "C": "Disciplined",
+        "D": "Deliberate"
+      }
+    },
+    {
+      "id": 14,
+      "options": {
+        "A": "Restrained",
+        "B": "Steady",
+        "C": "Aggressive",
+        "D": "Attractive"
+      }
+    },
+    {
+      "id": 15,
+      "options": {
+        "A": "Enthusiastic",
+        "B": "Analytical",
+        "C": "Sympathetic",
+        "D": "Determined"
+      }
+    },
+    {
+      "id": 16,
+      "options": {
+        "A": "Commanding",
+        "B": "Impulsive",
+        "C": "Slow-paced",
+        "D": "Critical"
+      }
+    },
+    {
+      "id": 17,
+      "options": {
+        "A": "Consistent",
+        "B": "Force-of-character",
+        "C": "Lively",
+        "D": "Laid-back"
+      }
+    },
+    {
+      "id": 18,
+      "options": {
+        "A": "Influential",
+        "B": "Kind",
+        "C": "Independent",
+        "D": "Orderly"
+      }
+    },
+    {
+      "id": 19,
+      "options": {
+        "A": "Idealistic",
+        "B": "Popular",
+        "C": "Pleasant",
+        "D": "Out-spoken"
+      }
+    },
+    {
+      "id": 20,
+      "options": {
+        "A": "Impatient",
+        "B": "Serious",
+        "C": "Procrastinator",
+        "D": "Emotional"
+      }
+    },
+    {
+      "id": 21,
+      "options": {
+        "A": "Competitive",
+        "B": "Spontaneous",
+        "C": "Loyal",
+        "D": "Thoughtful"
+      }
+    },
+    {
+      "id": 22,
+      "options": {
+        "A": "Self-sacrificing",
+        "B": "Considerate",
+        "C": "Convincing",
+        "D": "Courageous"
+      }
+    },
+    {
+      "id": 23,
+      "options": {
+        "A": "Dependent",
+        "B": "Flighty",
+        "C": "Stoic",
+        "D": "Pushy"
+      }
+    },
+    {
+      "id": 24,
+      "options": {
+        "A": "Tolerant",
+        "B": "Conventional",
+        "C": "Stimulating",
+        "D": "Directing"
+      }
+    }
+  ],
+
+  "scoring_key": {
+    "1": {"A": "S", "B": "D", "C": "C", "D": "I"},
+    "2": {"A": "D", "B": "C", "C": "I", "D": "S"},
+    "3": {"A": "S", "B": "I", "C": "D", "D": "C"},
+    "4": {"A": "D", "B": "C", "C": "S", "D": "I"},
+    "5": {"A": "C", "B": "I", "C": "S", "D": "D"},
+    "6": {"A": "I", "B": "D", "C": "C", "D": "S"},
+    "7": {"A": "C", "B": "S", "C": "D", "D": "I"},
+    "8": {"A": "I", "B": "D", "C": "C", "D": "S"},
+    "9": {"A": "I", "B": "C", "C": "S", "D": "D"},
+    "10": {"A": "C", "B": "I", "C": "D", "D": "S"},
+    "11": {"A": "D", "B": "C", "C": "S", "D": "I"},
+    "12": {"A": "I", "B": "C", "C": "I", "D": "D"},
+    "13": {"A": "I", "B": "D", "C": "C", "D": "S"},
+    "14": {"A": "S", "B": "S", "C": "D", "D": "I"},
+    "15": {"A": "I", "B": "C", "C": "S", "D": "D"},
+    "16": {"A": "D", "B": "I", "C": "S", "D": "C"},
+    "17": {"A": "C", "B": "D", "C": "I", "D": "S"},
+    "18": {"A": "I", "B": "S", "C": "D", "D": "C"},
+    "19": {"A": "C", "B": "I", "C": "S", "D": "D"},
+    "20": {"A": "D", "B": "C", "C": "S", "D": "I"},
+    "21": {"A": "D", "B": "I", "C": "S", "D": "C"},
+    "22": {"A": "S", "B": "S", "C": "I", "D": "D"},
+    "23": {"A": "S", "B": "I", "C": "S", "D": "D"},
+    "24": {"A": "S", "B": "C", "C": "I", "D": "D"}
+  },
+
+  "dimensions": {
+    "D": {
+      "name": "Dominance",
+      "color": "Red",
+      "focus": "Results, challenges, action",
+      "motto": "Get it done now"
+    },
+    "I": {
+      "name": "Influence",
+      "color": "Yellow",
+      "focus": "People, enthusiasm, collaboration",
+      "motto": "Let's do this together!"
+    },
+    "S": {
+      "name": "Steadiness",
+      "color": "Green",
+      "focus": "Cooperation, stability, sincerity",
+      "motto": "Let's keep things stable"
+    },
+    "C": {
+      "name": "Conscientiousness",
+      "color": "Blue",
+      "focus": "Quality, accuracy, expertise",
+      "motto": "Do it right or don't do it"
+    }
+  },
+
+  "pattern_determination": {
+    "algorithm": "Count dimensions above midline threshold (16 points = 65% of maximum). For 1 dimension above: assign pure style. For 2 dimensions: identify primary (highest) and secondary to map pattern. For D/I combination: calculate gap—small gap = Inspirational, large gap = Results-Oriented. For 3 dimensions: S+D+C = Investigator, C+I+S = Practitioner.",
+    "midline_threshold": 16,
+    "threshold_percentage": 0.65,
+    "scoring_notes": "Each dimension ranges 0-24. Scores above 16 (65% of maximum) indicate high expression. Primary = highest score, Secondary = second-highest above midline.",
+    "pattern_mapping": {
+      "D_only": "Developer",
+      "I_only": "Promoter",
+      "S_only": "Specialist",
+      "C_only": "Objective Thinker",
+      "D_I_large_gap": "Results-Oriented",
+      "D_I_small_gap": "Inspirational",
+      "D_C": "Creative",
+      "I_D": "Persuader",
+      "I_S": "Counselor",
+      "I_C": "Appraiser",
+      "S_I": "Agent",
+      "S_D": "Achiever",
+      "C_S": "Perfectionist",
+      "S_D_C": "Investigator",
+      "C_I_S": "Practitioner"
+    }
+  }
+}
