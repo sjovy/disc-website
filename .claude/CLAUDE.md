@@ -1,12 +1,14 @@
-# Project CLAUDE.md - Sprint 2 Execution
+# Project CLAUDE.md - Sprint 2B Execution
 
-I, Claude (PM Orchestrator), execute Sprint 2 using autonomous workflow with structured delegation.
+I, Claude (PM Orchestrator), execute Sprint 2B using autonomous workflow with structured delegation.
 
 ---
 
 ## Current Sprint
 
-**Sprint 2: Individual Assessment & AI Analysis Engine**
+**Sprint 2B: AI Analysis & Visualization**
+
+**Context:** Sprint 2A (Core Assessment Flow) is COMPLETE. Sprint 2B adds AI integration and results visualization.
 
 **For full sprint details, read:** @docs/sprints/sprint-2/SPRINT_PLAN.md
 
@@ -17,6 +19,10 @@ That file contains:
 - Model recommendations per feature
 - PM notes for delegation strategy
 - Quality gates and acceptance criteria
+
+**Sprint 2B Scope (from SPRINT_PLAN.md):**
+- Feature 3: Results Visualization (Recharts, charts, export, print)
+- Feature 4: AI Analysis Integration (RAG, Claude API, streaming, error handling)
 
 ---
 
@@ -86,7 +92,7 @@ npm run dev      # Start development server (http://localhost:3000)
 npm run build    # Production build
 npm run start    # Start production server
 npm run lint     # ESLint check (must pass with zero errors)
-npm test         # Not yet configured (Sprint 2+)
+npm test         # Run Vitest unit tests
 ```
 
 ### Project Structure
@@ -95,14 +101,18 @@ npm test         # Not yet configured (Sprint 2+)
 /app                    # Next.js App Router (Server Components default)
   ├── layout.tsx        # Root layout (Inter font, Header, Footer)
   ├── page.tsx          # Landing page with 3 entry cards
-  ├── /test             # Individual assessment (Sprint 2)
+  ├── /test             # Individual assessment (Sprint 2A COMPLETE)
   ├── /team             # Team analysis (Sprint 3)
   ├── /demo             # Static demo (Sprint 4)
   └── /privacy          # Privacy policy
 /components
   ├── /layout           # Container, Header, Footer
-  └── /landing          # EntryCard component
+  ├── /landing          # EntryCard component
+  └── /assessment       # QuestionCard, ProgressBar (Sprint 2A)
 /lib                    # Utilities (cn helper for classnames)
+  ├── /assessment       # Data loading, validation (Sprint 2A)
+  ├── /scoring          # DISC scoring engine (Sprint 2A - COMPLETE)
+  └── /storage          # localStorage persistence (Sprint 2A)
 /disc-data              # Assessment data & RAG context (~1.1MB)
 /docs                   # PRD, Implementation Plan, Sprint Plans, Status
 /.claude                # PROTECTED - PM orchestration infrastructure
@@ -222,11 +232,115 @@ className={cn(
   - Trade-off: API key exposed in bundle (acceptable for portfolio v1)
   - Migration path: Document API route pattern for production
 
-**Data Flow (Sprint 2+):**
-- Client-side localStorage for persistence
-- Claude API called from client with .env.local keys (v1 approach)
+**Data Flow (Sprint 2B):**
+- Client-side localStorage for persistence (Sprint 2A COMPLETE)
+- Claude API called from client with .env.local keys (Sprint 2B)
 - RAG: load `/disc-data` JSON files into Claude API context at runtime
 - 24-question assessment → DISC scoring → 15 pattern matching → AI analysis
+
+### DISC Scoring Architecture
+
+The scoring engine is the core business logic (Sprint 2A COMPLETE):
+
+**Pure Function Design:**
+- No side effects, deterministic, testable
+- All functions in `/lib/scoring/*` are pure
+
+**Scoring Flow:**
+```typescript
+import { scoreAssessment } from '@/lib/scoring'
+
+const answers = new Map([
+  [1, { most: 'B', least: 'A' }],
+  // ... 24 questions
+])
+
+const result = scoreAssessment(answers)
+// result.scores: { D: 18, I: 12, S: 6, C: 8 }
+// result.pattern: { name: 'Developer', primary: 'D', ... }
+```
+
+**Algorithm Summary:**
+- Each "Most" selection adds +1 to mapped dimension (D/I/S/C)
+- "Least" contributes 0 points
+- Scores range 0-24 per dimension
+- Pattern determination uses midline threshold (16 points = 65% of 24)
+- 15 possible patterns (4 pure + 8 combination + 2 triple-high + 1 balanced)
+
+**Testing:**
+- 41 unit tests in `/lib/scoring/*.test.ts`
+- 100% coverage of all 15 patterns + edge cases
+- Run with `npm test`
+
+### localStorage Persistence
+
+**Keys:**
+- `disc-assessment-progress` - In-progress answers (auto-save with 500ms debounce)
+- `disc-assessment-results` - Completed results with timestamp
+
+**API:**
+```typescript
+import { saveProgress, loadProgress, clearProgress } from '@/lib/storage/persistence'
+
+// Save in-progress answers (called on every change)
+saveProgress(answers)  // returns boolean (success/failure)
+
+// Load on page mount
+const saved = loadProgress()  // returns StoredAnswer | null
+
+// Clear (used by "Start Over" button)
+clearProgress()
+```
+
+**Error Handling:**
+- Quota exceeded (DOMException) handled gracefully
+- Errors logged to console.warn (non-blocking)
+- UI shows yellow warning banner if saves fail
+
+### TypeScript Configuration
+
+**Strict Mode Enabled:**
+```json
+{
+  "strict": true,
+  "noUncheckedIndexedAccess": true  // CRITICAL: prevents undefined access errors
+}
+```
+
+**Impact:**
+- All array/object access must check for undefined
+- Pattern: `const value = obj[key]` → `value` is `Type | undefined`
+- Use optional chaining: `obj?.key`, nullish coalescing: `obj[key] ?? fallback`, or type guards
+
+**Testing Types:**
+- Vitest configured with `@/*` alias matching main app
+- Import types from `/lib/**/types.ts` files
+
+### Data Sources
+
+**Assessment Data (`/disc-data`):**
+- Loaded via static import: `import data from '@/disc-data/filename.json'`
+- ~1.1MB total across all files
+- Used for: questions, scoring key, pattern definitions, AI RAG context
+
+**Sprint 2B:** AI integration will load DISC theory files into Claude API context for RAG pattern.
+
+### Development Workflow
+
+1. **Start dev server:** `npm run dev`
+2. **Make changes** (follow patterns above)
+3. **Check types:** TypeScript errors appear in editor
+4. **Lint:** `npm run lint` (must pass with zero errors)
+5. **Test:** `npm test` (if modifying scoring logic)
+6. **Build:** `npm run build` (verifies production compilation)
+
+### Common Gotchas
+
+- **Client vs Server Components:** Use `'use client'` directive ONLY when you need state (`useState`), effects (`useEffect`), or browser APIs. Default to Server Components.
+- **Metadata in Client Components:** Cannot export `metadata` from client components. Use layout files instead.
+- **TypeScript `noUncheckedIndexedAccess`:** Always check array/object access for undefined. Use `?.` or `??` operators.
+- **DISC Colors:** Use `disc-{d|i|s|c}` classes, not hardcoded hex values. Maintains design consistency.
+- **Import Paths:** Always use `@/*` alias, never relative paths like `../../lib/utils`.
 
 ---
 
@@ -234,17 +348,19 @@ className={cn(
 
 **STEP 1: READ & UNDERSTAND**
 1. Read @docs/sprints/sprint-2/SPRINT_PLAN.md thoroughly
-2. Understand:
-   - Sprint goal and scope
+2. Focus on Sprint 2B scope:
+   - Feature 3: Results Visualization
+   - Feature 4: AI Analysis Integration
+3. Understand:
    - Each feature's complexity and domain hints
    - Suggested task breakdown
    - Delegation strategy notes
    - Dependencies between features
-3. Internalize quality gates and acceptance criteria
+4. Internalize quality gates and acceptance criteria
 
 **STEP 2: CREATE TASK FILES**
 
-For each feature in SPRINT_PLAN.md:
+For each feature in Sprint 2B:
 
 1. Review task breakdown suggestions in sprint plan
 2. Create task file: `/docs/sprints/sprint-2/tasks/task-[NN]-[name].md`
@@ -276,7 +392,7 @@ For each task file:
 
 **STEP 5: COMPLETION**
 
-1. Update @docs/IMPLEMENTATION_PLAN.md checkboxes for Sprint 2
+1. Update @docs/IMPLEMENTATION_PLAN.md checkboxes for Sprint 2B
 2. Update @docs/PROJECT_STATUS.md with completion details
 3. Fill in "Token Budget Tracking - Actuals" in SPRINT_PLAN.md
 4. Add learnings to SPRINT_PLAN.md
@@ -289,20 +405,48 @@ For each task file:
 
 When creating task files in `/docs/sprints/sprint-2/tasks/`:
 
-**Reference:** Use the `xtask` skill for complete template structure.
-
-Read @xtask for:
-- Complete task file template
-- Guidelines for PM Orchestrator
-- Pre-flight checklist
-- Example task file with full detail
-
 **Key principles:**
 - Be specific (no placeholders, exact file paths)
 - Be actionable (clear commands/actions)
 - Reference patterns (point to existing code)
 - Be testable (verifiable acceptance criteria)
 - Be complete (agent shouldn't need to ask questions)
+
+**Template structure:**
+```markdown
+# Task [NN]: [Task Name]
+
+**Agent Type:** [frontend-engineer/backend-engineer/code-engineer/test-engineer]
+**Model:** [haiku/sonnet/opus]
+**Estimated Tokens:** [from sprint plan]
+
+## Context
+[Explain WHY this task exists, WHAT came before, and HOW it fits into the sprint]
+
+## Objective
+[Clear, specific statement of what this task accomplishes]
+
+## Steps
+1. [Specific action with exact file path]
+2. [Reference existing pattern from /path/to/file.tsx]
+3. [Implementation detail]
+4. [Verification command]
+
+## Acceptance Criteria
+- [ ] Criterion 1 (specific and testable)
+- [ ] Criterion 2 (specific and testable)
+
+## Verification
+\`\`\`bash
+npm run lint
+npm run build
+\`\`\`
+
+## Patterns to Follow
+- Page structure: See /app/page.tsx for Server Component pattern
+- Component pattern: See /components/landing/EntryCard.tsx
+- Styling: Use cn() utility, DISC color classes
+```
 
 ---
 
@@ -342,7 +486,15 @@ Load these via @ when needed:
 
 Requirements defined in @docs/PRD.md - reference as needed.
 
-Sprint 2 implements 18 requirements (REQ-IND-010 through REQ-IND-150, plus infrastructure and quality requirements).
+Sprint 2B implements 8 requirements:
+- REQ-IND-070: AI RAG integration
+- REQ-IND-080: AI personalized generation
+- REQ-IND-090: Results visualization (charts)
+- REQ-IND-100: Results page layout
+- REQ-IND-110: JSON export
+- REQ-IND-120: Print/save functionality
+- REQ-IND-150: Error handling for API failures
+- REQ-INFRA-060: Error boundaries
 
 These are NON-NEGOTIABLE. Every implementation must satisfy these.
 
@@ -355,7 +507,7 @@ Run these during quality verification:
 - dev: `npm run dev` - Start development server (http://localhost:3000)
 - build: `npm run build` - Production build
 - lint: `npm run lint` - ESLint check (must pass with zero errors)
-- test: `npm test` - Not yet configured (Sprint 2+)
+- test: `npm test` - Run Vitest unit tests
 - start: `npm start` - Start production server
 
 ---
@@ -370,10 +522,14 @@ Run these during quality verification:
 
 ---
 
-## Sprint 2 Ready for Execution
+## Sprint 2B Ready for Execution
 
 This CLAUDE.md provides the operating manual for PM Orchestrator.
 
-**Next step:** Read @docs/sprints/sprint-2/SPRINT_PLAN.md to begin sprint execution.
+**Sprint 2A Status:** COMPLETE (assessment UI, scoring engine, persistence)
+
+**Sprint 2B Scope:** AI integration + results visualization
+
+**Next step:** Read @docs/sprints/sprint-2/SPRINT_PLAN.md to begin Sprint 2B execution.
 
 ---
